@@ -1,0 +1,60 @@
+@import "compass/css3";
+
+// Breakpoints
+$small: 30.063em;    // Above 320px
+$medium: 33.813em;   // Above 480px
+$large: 48em;        // Above 767px
+$xlarge: 64em;       // Above 1024px
+
+$breakpoints: $small $medium $large $xlarge;
+$breakpoint-alias: base small medium large xlarge;
+
+$grid-columns: 24;            
+$grid-width: 73.125em;         
+$column-width: 1.709404%;      
+$column-margin: 2.5641%;
+
+$current-breakpoint: 1;
+
+.grid {
+	float: left;
+	clear: both;
+	width: 100%;
+}
+.row {
+    max-width: $grid-width;
+    margin: 0 auto;
+    padding: 0 1.25em;   
+}
+.col {
+    float: left;
+    width: 100%;
+    margin: 0 $column-margin 0 0;
+    &:last-child {
+        margin-right: 0 !important;
+    }
+}
+
+@each $breakpoint in $breakpoints {
+	$slug: nth($breakpoint-alias, $current-breakpoint);
+	@if $current-breakpoint == 1 {
+		.col {
+			@for $i from 1 through $grid-columns {
+				&.#{$slug}-#{$i} {
+					width: ($column-width * $i) + ($column-margin * ($i - 1));
+				}
+			}
+		}	
+	} @else {
+		@media all and (min-width: $breakpoint) {
+			.col {
+				@for $i from 1 through $grid-columns {
+					&.#{$slug}-#{$i} {
+						width: ($column-width * $i) + ($column-margin * ($i - 1));
+					}
+				}
+			}	
+		}
+	}
+	$current-breakpoint: $current-breakpoint + 1;
+}

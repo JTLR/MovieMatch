@@ -1,0 +1,26 @@
+// Breakpoints
+$small: 30.063em;    // Above 320px
+$medium: 33.813em;   // Above 480px
+$large: 48em;        // Above 767px
+$xlarge: 64em;       // Above 1024px
+
+// Colors
+$color-brand: #28DAC7;
+$color-secondary: darken($color-brand, 10%);
+$color-grey: #CCCCCC;
+$color-grey-dark: #333333;
+$color-grey-light: #F1F1F1;
+$color-white: #FFFFFF;
+
+// Spacing
+$spacing: rem(20);
+$spacing-large: rem(30);
+$spacing-small: rem(10);
+
+// Fonts
+$font-primary: 'NexaThin', "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-secondary: 'Alexandria', Georgia, Times, "Times New Roman", serif;
+$font-black: 'NexaBlack', "Arial Black", "Arial Bold", Gadget, sans-serif;
+$font-bold: 'Nexa-Bold', "Arial Bold", Gadget, sans-serif;
+$font-light: 'Nexa-Light', "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-code: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
