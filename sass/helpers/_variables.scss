@@ -5,12 +5,14 @@ $large: 48em;        // Above 767px
 $xlarge: 64em;       // Above 1024px
 
 // Colors
-$color-brand: #28DAC7;
+$color-brand: #6060A8;
 $color-secondary: darken($color-brand, 10%);
 $color-grey: #CCCCCC;
 $color-grey-dark: #333333;
 $color-grey-light: #F1F1F1;
 $color-white: #FFFFFF;
+$color-red: #E06B69;
+$color-green: #34BE55;
 
 // Spacing
 $spacing: rem(20);
@@ -18,9 +20,5 @@ $spacing-large: rem(30);
 $spacing-small: rem(10);
 
 // Fonts
-$font-primary: 'NexaThin', "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-secondary: 'Alexandria', Georgia, Times, "Times New Roman", serif;
-$font-black: 'NexaBlack', "Arial Black", "Arial Bold", Gadget, sans-serif;
-$font-bold: 'Nexa-Bold', "Arial Bold", Gadget, sans-serif;
-$font-light: 'Nexa-Light', "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-code: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+$font-primary: Quicksand, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-secondary: Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;

@@ -1,0 +1,81 @@
+ul, ol {
+	padding: rem(10) 0;
+	ul, ol {
+		padding: 0;
+	}
+	&.inline {
+		@include clear-fix;
+		li {
+			float: left;
+			margin-right: rem(10);
+			&:before { 
+				content: none;
+			}
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}
+ul {
+	li {
+		&:before {
+			content: "- ";
+			color: $color-grey-dark;
+		}
+	}
+}
+ol {
+	li {
+		counter-increment: item;  
+		&:before { 
+			content: counter(item) ". ";
+		}
+	}
+}
+li {
+	padding: 0 0 rem(10) 0;
+}
+
+@media all and (min-width: $small) {
+	ul, ol {
+		&.inline {
+			li {
+				margin-right: rem(15);
+			}
+		}
+	}
+}
+
+@media all and (min-width: $medium) {
+	ul, ol {
+		&.inline {
+			li {
+				margin-right: rem(20);
+			}
+		}
+	}
+
+}
+
+@media all and (min-width: $large) {
+	ul, ol {
+		&.inline {
+			li {
+				margin-right: rem(25);
+			}
+		}
+	}
+
+}
+
+@media all and (min-width: $xlarge) {
+	ul, ol {
+		&.inline {
+			li {
+				margin-right: rem(30);
+			}
+		}
+	}
+
+}

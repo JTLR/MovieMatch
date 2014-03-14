@@ -1,0 +1,39 @@
+input {
+	font-family: $font-primary;
+}
+
+form {
+	&.inline {
+		input,
+		label {
+			float: left;
+		}
+	}
+}
+
+input[type=submit] {
+	&.fa-x {
+		font-family: FontAwesome;
+	}
+}
+
+@media all and (min-width: $small) {
+	input {
+		font-size: rem(20);
+	}
+}
+
+@media all and (min-width: $medium) {
+	input {
+		font-size: rem(25);
+	}	
+}
+
+@media all and (min-width: $large) {
+	input {
+		font-size: rem(30);
+	}	
+}
+
+@media all and (min-width: $xlarge) {
+}

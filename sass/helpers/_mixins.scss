@@ -1,14 +1,5 @@
 // Mixins
 
-@mixin font-size ($pixels) {
-	@if $stylesheet == "ie" {
-		font-size: $pixels + px;
-	}
-	@else {
-		font-size: ($pixels / 16) + rem;
-	}
-}
-
 @mixin clear-fix {
 	float: left;
 	clear: both;
@@ -23,5 +14,15 @@
 	}
 	@else {
 		@return ($pixels / 16) + rem;
+	}
+}
+
+@mixin font-sizer($font-size, $line-height, $margin-bottom) {
+	font-size: rem($font-size);
+	line-height: rem($line-height);
+	@if $line-height > $font-size {
+		margin-bottom: rem($margin-bottom - ($line-height - $font-size)/2);
+	} @else {
+		margin-bottom: rem($margin-bottom);
 	}
 }

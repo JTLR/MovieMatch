@@ -1,0 +1,15 @@
+.movie {
+	position: relative;
+	overflow: hidden;
+}
+.movie-thumbnail {
+
+}
+.movie-information {
+	position: absolute;
+	bottom: rem(40);
+	left: 0;
+	width: 100%;
+	background-color: rgba($color-grey-dark, 0.5);
+	@include transform(translateY(100%));
+}

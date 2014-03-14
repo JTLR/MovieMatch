@@ -1,0 +1,147 @@
+body {
+	font-family: $font-primary;
+}
+
+h1 {
+	font-family: $font-primary;
+	font-size: rem(40);
+	color: $color-grey-dark;
+}
+h2 {
+	font-family: $font-primary;
+	font-size: rem(35);
+	color: $color-grey-dark;
+}
+h3 {
+	font-family: $font-primary;
+	font-size: rem(30);
+	color: $color-grey-dark;
+}
+h4 {
+	font-family: $font-primary;
+	font-size: rem(25);
+	color: $color-grey-dark;
+}
+h5 {
+	font-family: $font-primary;
+	font-size: rem(20);
+	color: $color-grey-dark;
+}
+h6 {
+	font-family: $font-primary;
+	font-size: rem(16);
+	color: $color-grey-dark;
+}
+p {
+	font-family: $font-primary;
+	color: $color-grey-dark;	
+}
+p,
+li,
+dt,
+dd,
+.button {
+	font-size: rem(16);
+}
+a, .anchor {
+	color: $color-brand;
+	@include transition(0.25s color ease);
+	&:hover {
+		color: darken($color-brand, 10%);
+	}
+}
+.anchor {
+	cursor: pointer;
+}
+
+.sub-title {
+	font-family: $font-secondary;
+}
+
+@media all and (min-width: $small) {
+	h1 {
+		font-size: rem(45);
+	}
+	h2 {
+		font-size: rem(40);
+	}
+	h3 {
+		font-size: rem(35);
+	}
+	h4 {
+		font-size: rem(30);
+	}
+	h5 {
+		font-size: rem(25);
+	}
+	h6 {
+		font-size: rem(20);
+	}
+	p,
+	li,
+	dt,
+	dd,
+	.button {
+		font-size: rem(20);
+	}
+}
+
+@media all and (min-width: $medium) {
+	h1 {
+		font-size: rem(50);
+	}
+	h2 {
+		font-size: rem(45);
+	}
+	h3 {
+		font-size: rem(40);
+	}
+	h4 {
+		font-size: rem(35);
+	}
+	h5 {
+		font-size: rem(30);
+	}
+	h6 {
+		font-size: rem(25);
+	}
+	p,
+	li,
+	dt,
+	dd,
+	.button {
+		font-size: rem(25);
+	}	
+}
+
+@media all and (min-width: $large) {
+	h1 {
+		font-size: rem(55);
+	}
+	h2 {
+		font-size: rem(50);
+	}
+	h3 {
+		font-size: rem(45);
+	}
+	h4 {
+		font-size: rem(40);
+	}
+	h5 {
+		font-size: rem(35);
+	}
+	h6 {
+		font-size: rem(30);
+	}
+	p,
+	li,
+	dt,
+	dd,
+	.button {
+		font-size: rem(30);
+	}	
+}
+
+@media all and (min-width: $xlarge) {
+	
+}

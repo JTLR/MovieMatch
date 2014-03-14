@@ -1,0 +1,28 @@
+.site-header {
+	@include clear-fix;
+	margin: 0 0 rem(40) 0;
+	padding: rem(20) 0;
+	background-color: $color-brand;
+	h1 a {
+		color: $color-white;
+		&:hover {
+			color: $color-grey;
+		}
+	}
+}
+
+@media all and (min-width: $small) {
+
+}
+
+@media all and (min-width: $medium) {
+	
+}
+
+@media all and (min-width: $large) {
+	
+}
+
+@media all and (min-width: $xlarge) {
+	
+}
