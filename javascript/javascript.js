@@ -3,6 +3,17 @@ window.MovieMatch = Ember.Application.create();
 
 MovieMatch.ApplicationAdapter = DS.FixtureAdapter.extend();
 
+// Routers
+MovieMatch.Router.map(function() {
+	this.resource('moviematch', { path: '/' });
+});
+
+MovieMatch.MovieMatchRoute = Ember.Route.extend({
+	model: function() {
+		return this.store.find('movie');
+	}
+});
+
 // Models
 
 // Movie
@@ -31,7 +42,7 @@ MovieMatch.Movie.FIXTURES = [
 		id: 2,
 		title: 'Titanic',
 		year: 1997,
-		genres: ['Drama', 'Romanc'],
+		genres: ['Drama', 'Romance'],
 		cast: ['Leonardo DiCaprio', 'Kate Winslet', 'Billy Zane'],
 		director: 'James Cameron',
 		synopsis: 'A seventeen-year-old aristocrat, expecting to be married to a rich claimant by her mother, falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.',
@@ -47,16 +58,23 @@ MovieMatch.Movie.FIXTURES = [
 		synopsis: 'In the antebellum United States, Solomon Northup, a free black man from upstate New York, is abducted and sold into slavery.',
 		imgUrl: '12-years-a-slave.jpg'
 	}
-]
+];
+
+// Controllers
+MovieMatch.MovieMatchController = Ember.ArrayController.extend({
+
+});
+
+MovieMatch.MovieController = Ember.ObjectController.extend({
+
+});
 
 
 
 // Presentational JS
-
 $(document).ready(function () {
 	var movieInformation = $('.movie-information')
     $('h1', movieInformation).click(function(){
         movieInformation.toggleClass( "is-active" );
     });
- });
-       
+ });  
