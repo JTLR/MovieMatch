@@ -1,20 +1,7 @@
-// Mixins
-
 @mixin clear-fix {
 	float: left;
 	clear: both;
 	width: 100%;
-}
-
-// Functions
-
-@function rem ($pixels) {
-	@if $stylesheet == "ie" {
-		@return $pixels + px;
-	}
-	@else {
-		@return ($pixels / 16) + rem;
-	}
 }
 
 @mixin font-sizer($font-size, $line-height, $margin-bottom) {
@@ -24,5 +11,15 @@
 		margin-bottom: rem($margin-bottom - ($line-height - $font-size)/2);
 	} @else {
 		margin-bottom: rem($margin-bottom);
+	}
+}
+
+@mixin breakpoint($min-width, $breakpoint)  {
+	@if $stylesheet != "ie" and $breakpoint > 1 {
+		@media screen and (min-width: $min-width) {
+			@content;
+		}
+	} @else {
+		@content;
 	}
 }

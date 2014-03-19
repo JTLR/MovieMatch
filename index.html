@@ -11,8 +11,8 @@
 
 	<link rel="stylesheet" href="css/stylesheet.css">	
 
-	<script src="javascript/jquery-1.11.0.min.js"></script>
-	<script src="javascript/javascript.js"></script>	
+	<script src="javascript/jquery-1.11.0.min.js" type="text/javascript"></script>
+	<script src="javascript/javascript.js" type="text/javascript"></script>	
 </head>
 <body>
 	<header class="site-header">
@@ -53,57 +53,69 @@
 			<div class="row">
 				<div class="col">
 					<article class="movie">
-						<img class="movie-thumbnail" src="https://blogs.zoho.com/wp-content/uploads/2014/02/wolf-of-wall-street1.jpg">
-						<div class="movie-information">
-							<h1 class="anchor js-toggle-movie-information">The Wolf of Wall Street</h1>
-							<dl>
-								<dt>Year</dt>
-								<dd>2013</dd>
-								<dt>Genres</dt>
-								<dd>
-									<ul class="inline">
-										<li>
-											<a href="#">Biography</a>
-										</li>
-										<li>
-											<a href="#">Comedy</a>
-										</li>
-										<li>
-											<a href="#">Crime</a>
-										</li>
-									</ul>
-								</dd>
-								<dt>Cast</dt>
-								<dd>
-									<ul class="inline">
-										<li>
-											<a href="#">Leonardo DiCaprio</a>
-										</li>
-										<li>
-											<a href="#">Jonah Hill</a>
-										</li>
-										<li>
-											<a href="#">Margot Robbie</a>
-										</li>
-									</ul>
-								</dd>
-								<dt>Director</dt>
-								<dd>
-									<a href="#">Martin Scorsese</a>
-								</dd>
-								<dt>Synopsis</dt>
-								<dd>Based on the true story of Jordan Belfort, from his rise to a wealthy stockbroker living the high life to his fall involving crime, corruption and the federal government.</dd>
-							</dl>
+						<div class="col large-12">
+							<img class="movie-thumbnail" src="https://blogs.zoho.com/wp-content/uploads/2014/02/wolf-of-wall-street1.jpg">
+							<button class="button full green large-show">
+								<i class="fa fa-thumbs-o-up"></i>
+							</button>
+							<button class="button full red large-show">
+								<i class="fa fa-thumbs-o-down"></i>
+							</button>
+							<button class="button full blue large-show">Add to watch list</button>
+							<button class="button full grey large-show">Skip</button>
+						</div>
+						<div class="col large-12">
+							<div class="movie-information">
+								<h1 class="anchor js-toggle-movie-information">The Wolf of Wall Street</h1>
+								<dl>
+									<dt>Year</dt>
+									<dd>2013</dd>
+									<dt>Genres</dt>
+									<dd>
+										<ul class="inline">
+											<li>
+												<a href="#">Biography</a>
+											</li>
+											<li>
+												<a href="#">Comedy</a>
+											</li>
+											<li>
+												<a href="#">Crime</a>
+											</li>
+										</ul>
+									</dd>
+									<dt>Cast</dt>
+									<dd>
+										<ul class="inline">
+											<li>
+												<a href="#">Leonardo DiCaprio</a>
+											</li>
+											<li>
+												<a href="#">Jonah Hill</a>
+											</li>
+											<li>
+												<a href="#">Margot Robbie</a>
+											</li>
+										</ul>
+									</dd>
+									<dt>Director</dt>
+									<dd>
+										<a href="#">Martin Scorsese</a>
+									</dd>
+									<dt>Synopsis</dt>
+									<dd>Based on the true story of Jordan Belfort, from his rise to a wealthy stockbroker living the high life to his fall involving crime, corruption and the federal government.</dd>
+								</dl>
+							</div>
 						</div>
 					</article>
-					<button class="button half red">
-						<i class="fa fa-thumbs-o-down"></i>
-					</button>
-					<button class="button half green">
+					<button class="button half green large-hide">
 						<i class="fa fa-thumbs-o-up"></i>
 					</button>
-					<button class="button half blue">Add to watch list</button>
-					<button class="button half grey">Skip</button>
+					<button class="button half red large-hide">
+						<i class="fa fa-thumbs-o-down"></i>
+					</button>
+					<button class="button half blue large-hide">Add to watch list</button>
+					<button class="button half grey large-hide">Skip</button>
 				</div>
 			</div>
 		</div>

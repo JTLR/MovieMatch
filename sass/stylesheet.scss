@@ -4,6 +4,7 @@ $stylesheet: stylesheet;
 @import "compass/css3";
 
 // Helpers
+@import "helpers/functions";
 @import "helpers/variables";
 @import "helpers/mixins";
 @import "helpers/classes";

@@ -1,8 +1,17 @@
 // Breakpoints
+$base: 0;			 // Above 0px
 $small: 30.063em;    // Above 320px
 $medium: 33.813em;   // Above 480px
 $large: 48em;        // Above 767px
 $xlarge: 64em;       // Above 1024px
+
+// Grid variables
+$grid-columns: 24;            
+$grid-width: 1170;         
+$column-width: "";      
+$column-margin: 30;
+$breakpoints: $base, $small, $medium, $large, $xlarge;
+$breakpoint-alias: "base", "small", "medium", "large", "xlarge";
 
 // Colors
 $color-brand: #62016d;
@@ -10,6 +19,7 @@ $color-secondary: darken($color-brand, 10%);
 $color-grey: #ccc;
 $color-grey-dark: #333;
 $color-grey-light: #f1f1f1;
+$color-black: #111;
 $color-white: #fff;
 $color-red: #e06b69;
 $color-green: #34be55;
@@ -20,5 +30,5 @@ $spacing-large: rem(30);
 $spacing-small: rem(10);
 
 // Fonts
-$font-primary: Helvetica, Quicksand, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-primary: Quicksand, "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-secondary: Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;

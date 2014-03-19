@@ -1,0 +1,8 @@
+@function rem ($pixels) {
+	@if $stylesheet == "ie" {
+		@return $pixels + px;
+	}
+	@else {
+		@return ($pixels / 16) + rem;
+	}
+}

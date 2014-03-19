@@ -6,13 +6,28 @@
 
 }
 .movie-information {
-	padding:10px;
 	position: absolute;
 	bottom: rem(60);
 	left: 0;
 	width: 100%;
+	padding: rem(20);
 	background-color: rgba($color-grey-dark, 0.7);
 	@include transform(translateY(100%));
+	@include transition(.5s all ease);
+	&.is-active {
+		bottom: 0;
+		background-color: rgba($color-black, 0.9);
+		@include transform(translateY(0));
+	}
+	dt, dd {
+		color: $color-white;	
+	}
+	a, .anchor {
+		color: $color-grey;
+		&:hover {
+			color: $color-brand;
+		}
+	}
 }
 
 @media all and (min-width: $small) {
@@ -24,13 +39,31 @@
 }
 
 @media all and (min-width: $large) {
-	
+	.movie {
+		display: table;
+		background-color: #333;
+	}
+	.movie-thumbnail,
+	.movie-information {
+		display: table-cell;
+		vertical-align: top;
+	}
+	.movie-thumbnail {
+		width: 100%;
+	}
+	.movie-information {
+		position: static;
+		bottom: auto;
+		left: auto;
+		width: 50%;
+		padding: rem(20) rem(20) rem(20) 0;
+		background-color: transparent;
+		@include transform(translateY(0));
+		&.is-active {
+			background-color: transparent;
+		}
+	}
 }
 
 @media all and (min-width: $xlarge) {
-	@include transition(.5s all ease);
-	&.is-active {
-		bottom: 0;
-		@include transform(translateY(0));
-	}
 }

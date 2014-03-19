@@ -1,10 +1,15 @@
-$grid-columns: 24;            
-$grid-width: rem(1170);         
-$column-width: 1.709404%;      
-$column-margin: 2.5641%;
+$calc-column-width: null;
+$calc-column-margin: null;
 
-$breakpoints: 0 $small $medium $large $xlarge;
-$breakpoint-alias: base small medium large xlarge;
+@if $column-width != "" {
+    $calc-column-margin: (((($grid-width - ($column-width * $grid-columns))) / ($grid-columns - 1)) * (100 / $grid-width));
+    $calc-column-width: ($column-width  * (100 / $grid-width));
+}
+@if $column-margin != "" {
+    $calc-column-width: ((($grid-width - ($column-margin * ($grid-columns - 1))) / $grid-columns) * (100 / $grid-width));
+    $calc-column-margin: ($column-margin  * (100 / $grid-width));
+}
+
 $current-breakpoint: 1;
 
 .grid {
@@ -13,9 +18,9 @@ $current-breakpoint: 1;
     width: 100%;
 }
 .row {
-    max-width: $grid-width;
+    max-width: rem($grid-width);
     margin: 0 auto;
-    padding: 0 $spacing-small;   
+    padding: 0 rem(10);   
     @include box-sizing(content-box);
     &:after {
         @include clear-fix;
@@ -26,32 +31,30 @@ $current-breakpoint: 1;
     float: left;
     display: inline;
     width: 100%;
-    margin: 0 $column-margin 0 0;
-    @for $i from 1 through $grid-columns {
-        &.base-#{$i} {
-            width: ($column-width * $i) + ($column-margin * ($i - 1));
-        }
-    }
+    margin: 0 unquote($calc-column-margin + "%") 0 0;
     &:last-child {
+        margin-right: 0;
+    }
+    &.last {
         margin-right: 0 !important;
     }
 }
 @each $breakpoint in $breakpoints {
     $slug: nth($breakpoint-alias, $current-breakpoint);
-    @if $current-breakpoint == 1 {        
+    @include breakpoint(nth($breakpoints, $current-breakpoint), $current-breakpoint) {      
         .row {    
             padding: 0 rem(10 * $current-breakpoint);        
         }
         .col {
             @for $i from 1 through $grid-columns {
                 &.#{$slug}-#{$i} {
-                    width: ($column-width * $i) + ($column-margin * ($i - 1));
+                    width: unquote((($calc-column-width * $i) + ($calc-column-margin * ($i - 1))) + "%");
                 }
             }
         }   
         @for $i from 0 through ($grid-columns - 1) {
             .#{$slug}-push-#{$i} {
-                margin-left: ($column-width * $i) + ($column-margin * $i);
+                margin-left: unquote((($calc-column-width * $i) + ($calc-column-margin * $i)) + "%");
             }
         }        
         .#{$slug}-show {
@@ -60,30 +63,6 @@ $current-breakpoint: 1;
         .#{$slug}-hide {
             display: none;
         }   
-    } @else {
-        @media all and (min-width: $breakpoint) {             
-            .row {    
-                padding: 0 rem(10 * $current-breakpoint);        
-            }
-            .col {
-                @for $i from 1 through $grid-columns {
-                    &.#{$slug}-#{$i} {
-                        width: ($column-width * $i) + ($column-margin * ($i - 1));
-                    }
-                }
-            }    
-            @for $i from 0 through ($grid-columns - 1) {
-                .#{$slug}-push-#{$i} {
-                    margin-left: ($column-width * $i) + ($column-margin * $i);
-                }
-            }           
-            .#{$slug}-show {
-                display: block;
-            }
-            .#{$slug}-hide {
-                display: none;
-            }    
-        }
     }
     $current-breakpoint: $current-breakpoint + 1;
 }

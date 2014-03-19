@@ -1,6 +1,7 @@
-    $(document).ready(function () {
-            $('.movie-information').click(function(){
-                $( ".movie-information" ).toggleClass( "is-active" );
-            });
-     });
-           
+$(document).ready(function () {
+	var movieInformation = $('.movie-information')
+    $('h1', movieInformation).click(function(){
+        movieInformation.toggleClass( "is-active" );
+    });
+ });
+       
