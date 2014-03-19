@@ -1,0 +1,42 @@
+body {
+	&:after {
+		display: block;
+		background-color: #333333;
+		opacity: 0.5;
+		padding: 10px 0;
+		content: 'BASE';
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		color: #fff;
+		text-align: center;
+	}
+}
+@media all and (min-width: $small) {
+	body {		
+		&:after {
+			content: 'SMALL';
+		}
+	}
+}
+@media all and (min-width: $medium) {
+	body {		
+		&:after {
+			content: 'MEDIUM';
+		}
+	}
+}
+@media all and (min-width: $large) {
+	body {		
+		&:after {
+			content: 'LARGE';
+		}
+	}
+}
+@media all and (min-width: $xlarge) {
+	body {		
+		&:after {
+			content: 'XLARGE';
+		}
+	}
+}
