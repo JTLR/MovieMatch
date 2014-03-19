@@ -3,10 +3,12 @@
 	margin: 0 0 rem(40) 0;
 	padding: rem(20) 0;
 	background-color: $color-brand;
-	h1 a {
-		color: $color-white;
-		&:hover {
-			color: $color-grey;
+	h1 { 
+		a {
+			color: $color-white;
+			&:hover {
+				color: $color-grey;
+			}
 		}
 	}
 }
@@ -20,7 +22,8 @@
 }
 
 @media all and (min-width: $large) {
-	
+	.site-header {
+	}
 }
 
 @media all and (min-width: $xlarge) {

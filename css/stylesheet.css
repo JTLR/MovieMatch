@@ -2271,35 +2271,35 @@ body {
 /* line 5, ../sass/base/_typography.scss */
 h1 {
   font-family: Quicksand, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 2.5rem;
+  font-size: 1.875rem;
   color: #333333;
 }
 
 /* line 10, ../sass/base/_typography.scss */
 h2 {
   font-family: Quicksand, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 2.1875rem;
+  font-size: 1.5625rem;
   color: #333333;
 }
 
 /* line 15, ../sass/base/_typography.scss */
 h3 {
   font-family: Quicksand, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.875rem;
+  font-size: 1.4375rem;
   color: #333333;
 }
 
 /* line 20, ../sass/base/_typography.scss */
 h4 {
   font-family: Quicksand, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.5625rem;
+  font-size: 1.25rem;
   color: #333333;
 }
 
 /* line 25, ../sass/base/_typography.scss */
 h5 {
   font-family: Quicksand, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   color: #333333;
 }
 
@@ -2327,7 +2327,7 @@ dd,
 
 /* line 46, ../sass/base/_typography.scss */
 a, .anchor {
-  color: #6060a8;
+  color: #62016d;
   -webkit-transition: 0.25s color ease;
   -moz-transition: 0.25s color ease;
   -o-transition: 0.25s color ease;
@@ -2335,7 +2335,7 @@ a, .anchor {
 }
 /* line 49, ../sass/base/_typography.scss */
 a:hover, .anchor:hover {
-  color: #4b4b8a;
+  color: #35013a;
 }
 
 /* line 53, ../sass/base/_typography.scss */
@@ -2351,32 +2351,32 @@ a:hover, .anchor:hover {
 @media all and (min-width: 30.063em) {
   /* line 62, ../sass/base/_typography.scss */
   h1 {
-    font-size: 2.8125rem;
+    font-size: 2.1875rem;
   }
 
   /* line 65, ../sass/base/_typography.scss */
   h2 {
-    font-size: 2.5rem;
+    font-size: 1.875rem;
   }
 
   /* line 68, ../sass/base/_typography.scss */
   h3 {
-    font-size: 2.1875rem;
+    font-size: 1.6875rem;
   }
 
   /* line 71, ../sass/base/_typography.scss */
   h4 {
-    font-size: 1.875rem;
+    font-size: 1.4375rem;
   }
 
   /* line 74, ../sass/base/_typography.scss */
   h5 {
-    font-size: 1.5625rem;
+    font-size: 1.25rem;
   }
 
   /* line 77, ../sass/base/_typography.scss */
   h6 {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
   }
 
   /* line 84, ../sass/base/_typography.scss */
@@ -2385,87 +2385,47 @@ a:hover, .anchor:hover {
   dt,
   dd,
   .button {
-    font-size: 1.25rem;
-  }
-}
-@media all and (min-width: 33.813em) {
-  /* line 90, ../sass/base/_typography.scss */
-  h1 {
-    font-size: 3.125rem;
-  }
-
-  /* line 93, ../sass/base/_typography.scss */
-  h2 {
-    font-size: 2.8125rem;
-  }
-
-  /* line 96, ../sass/base/_typography.scss */
-  h3 {
-    font-size: 2.5rem;
-  }
-
-  /* line 99, ../sass/base/_typography.scss */
-  h4 {
-    font-size: 2.1875rem;
-  }
-
-  /* line 102, ../sass/base/_typography.scss */
-  h5 {
-    font-size: 1.875rem;
-  }
-
-  /* line 105, ../sass/base/_typography.scss */
-  h6 {
-    font-size: 1.5625rem;
-  }
-
-  /* line 112, ../sass/base/_typography.scss */
-  p,
-  li,
-  dt,
-  dd,
-  .button {
-    font-size: 1.5625rem;
+    font-size: 1.125rem;
   }
 }
 @media all and (min-width: 48em) {
-  /* line 118, ../sass/base/_typography.scss */
+  /* line 93, ../sass/base/_typography.scss */
   h1 {
-    font-size: 3.4375rem;
-  }
-
-  /* line 121, ../sass/base/_typography.scss */
-  h2 {
-    font-size: 3.125rem;
-  }
-
-  /* line 124, ../sass/base/_typography.scss */
-  h3 {
-    font-size: 2.8125rem;
-  }
-
-  /* line 127, ../sass/base/_typography.scss */
-  h4 {
     font-size: 2.5rem;
   }
 
-  /* line 130, ../sass/base/_typography.scss */
-  h5 {
+  /* line 96, ../sass/base/_typography.scss */
+  h2 {
     font-size: 2.1875rem;
   }
 
-  /* line 133, ../sass/base/_typography.scss */
-  h6 {
-    font-size: 1.875rem;
+  /* line 99, ../sass/base/_typography.scss */
+  h3 {
+    font-size: 2rem;
   }
 
-  /* line 140, ../sass/base/_typography.scss */
+  /* line 102, ../sass/base/_typography.scss */
+  h4 {
+    font-size: 1.75rem;
+  }
+
+  /* line 105, ../sass/base/_typography.scss */
+  h5 {
+    font-size: 1.5625rem;
+  }
+
+  /* line 108, ../sass/base/_typography.scss */
+  h6 {
+    font-size: 1.4375rem;
+  }
+
+  /* line 115, ../sass/base/_typography.scss */
   p,
   li,
   dt,
   dd,
   .button {
-    font-size: 1.875rem;
+    font-size: 1.4375rem;
   }
 }
 /* line 10, ../sass/layout/_grid.scss */
@@ -3764,69 +3724,6 @@ a:hover, .anchor:hover {
     display: none;
   }
 }
-/* line 1, ../sass/sub-modules/_site-header.scss */
-.site-header {
-  float: left;
-  clear: both;
-  width: 100%;
-  margin: 0 0 2.5rem 0;
-  padding: 1.25rem 0;
-  background-color: #6060a8;
-}
-/* line 6, ../sass/sub-modules/_site-header.scss */
-.site-header h1 a {
-  color: white;
-}
-/* line 8, ../sass/sub-modules/_site-header.scss */
-.site-header h1 a:hover {
-  color: #cccccc;
-}
-
-/* line 3, ../sass/sub-modules/_site-navigation.scss */
-.site-navigation ul li {
-  padding: 0;
-}
-/* line 5, ../sass/sub-modules/_site-navigation.scss */
-.site-navigation ul li a {
-  color: white;
-}
-/* line 7, ../sass/sub-modules/_site-navigation.scss */
-.site-navigation ul li a:hover {
-  color: #cccccc;
-}
-/* line 12, ../sass/sub-modules/_site-navigation.scss */
-.site-navigation ul li.is-active a {
-  color: #333333;
-}
-/* line 18, ../sass/sub-modules/_site-navigation.scss */
-.site-navigation input[type=search] {
-  max-width: 12.5rem;
-  padding: 0.625rem;
-  line-height: 1.5625rem;
-}
-
-@media all and (min-width: 30.063em) {
-  /* line 31, ../sass/sub-modules/_site-navigation.scss */
-  .site-navigation input[type=search] {
-    line-height: 2.0625rem;
-  }
-}
-@media all and (min-width: 48em) {
-  /* line 42, ../sass/sub-modules/_site-navigation.scss */
-  .site-navigation {
-    float: right;
-  }
-  /* line 44, ../sass/sub-modules/_site-navigation.scss */
-  .site-navigation input[type=search] {
-    line-height: 2.4375rem;
-  }
-}
-@media all and (min-width: 64em) {
-  /* line 52, ../sass/sub-modules/_site-navigation.scss */
-  .site-navigation input[type=search] {
-    line-height: 2.8125rem;
-  }
-}
 /* line 1, ../sass/sub-modules/_buttons.scss */
 .button {
   float: left;
@@ -3869,16 +3766,16 @@ a:hover, .anchor:hover {
 }
 /* line 29, ../sass/sub-modules/_buttons.scss */
 .button.blue {
-  background-color: #6060a8;
+  background-color: #62016d;
   color: white;
 }
 /* line 32, ../sass/sub-modules/_buttons.scss */
 .button.blue:hover {
-  background-color: #4b4b8a;
+  background-color: #35013a;
 }
 /* line 35, ../sass/sub-modules/_buttons.scss */
 .button.blue:active {
-  background-color: #393969;
+  background-color: #070008;
 }
 /* line 39, ../sass/sub-modules/_buttons.scss */
 .button.grey {
@@ -4013,6 +3910,111 @@ input[type=submit].fa-x {
     font-size: 1.875rem;
   }
 }
+/* line 1, ../sass/sub-modules/_site-header.scss */
+.site-header {
+  float: left;
+  clear: both;
+  width: 100%;
+  margin: 0 0 2.5rem 0;
+  padding: 1.25rem 0;
+  background-color: #62016d;
+}
+/* line 7, ../sass/sub-modules/_site-header.scss */
+.site-header h1 a {
+  color: white;
+}
+/* line 9, ../sass/sub-modules/_site-header.scss */
+.site-header h1 a:hover {
+  color: #cccccc;
+}
+
+/* line 2, ../sass/sub-modules/_site-navigation.scss */
+.site-navigation ul {
+  display: none;
+}
+/* line 4, ../sass/sub-modules/_site-navigation.scss */
+.site-navigation ul li {
+  padding: 0;
+}
+/* line 6, ../sass/sub-modules/_site-navigation.scss */
+.site-navigation ul li a {
+  color: white;
+}
+/* line 8, ../sass/sub-modules/_site-navigation.scss */
+.site-navigation ul li a:hover {
+  color: #cccccc;
+}
+/* line 13, ../sass/sub-modules/_site-navigation.scss */
+.site-navigation ul li.is-active a {
+  color: #333333;
+}
+/* line 19, ../sass/sub-modules/_site-navigation.scss */
+.site-navigation input[type=search] {
+  max-width: 12.5rem;
+  padding: 0.625rem;
+  line-height: 1.5625rem;
+}
+
+/* line 25, ../sass/sub-modules/_site-navigation.scss */
+.site-navigation-toggle {
+  float: right;
+  padding: 0 0.9375rem;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  color: white;
+  -webkit-transition: 0.25s color ease;
+  -moz-transition: 0.25s color ease;
+  -o-transition: 0.25s color ease;
+  transition: 0.25s color ease;
+}
+/* line 32, ../sass/sub-modules/_site-navigation.scss */
+.site-navigation-toggle:hover {
+  color: #cccccc;
+}
+
+@media all and (min-width: 30.063em) {
+  /* line 43, ../sass/sub-modules/_site-navigation.scss */
+  .site-navigation input[type=search] {
+    line-height: 2.0625rem;
+  }
+
+  /* line 47, ../sass/sub-modules/_site-navigation.scss */
+  .site-navigation-toggle {
+    line-height: 2.8125rem;
+  }
+}
+@media all and (min-width: 33.813em) {
+  /* line 55, ../sass/sub-modules/_site-navigation.scss */
+  .site-navigation-toggle {
+    line-height: 3.125rem;
+  }
+}
+@media all and (min-width: 48em) {
+  /* line 61, ../sass/sub-modules/_site-navigation.scss */
+  .site-navigation {
+    float: right;
+  }
+  /* line 63, ../sass/sub-modules/_site-navigation.scss */
+  .site-navigation ul {
+    display: block;
+  }
+  /* line 66, ../sass/sub-modules/_site-navigation.scss */
+  .site-navigation input[type=search] {
+    line-height: 2.4375rem;
+  }
+
+  /* line 70, ../sass/sub-modules/_site-navigation.scss */
+  .site-navigation-toggle {
+    float: left;
+    line-height: 3.4375rem;
+  }
+}
+@media all and (min-width: 64em) {
+  /* line 78, ../sass/sub-modules/_site-navigation.scss */
+  .site-navigation input[type=search] {
+    line-height: 2.8125rem;
+  }
+}
 /* line 1, ../sass/modules/_movie.scss */
 .movie {
   position: relative;
@@ -4031,4 +4033,43 @@ input[type=submit].fa-x {
   -ms-transform: translateY(100%);
   -o-transform: translateY(100%);
   transform: translateY(100%);
+}
+
+/* line 2, ../sass/helpers/_debug.scss */
+body:after {
+  display: block;
+  background-color: #333333;
+  opacity: 0.5;
+  padding: 10px 0;
+  content: 'BASE';
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+}
+
+@media all and (min-width: 30.063em) {
+  /* line 17, ../sass/helpers/_debug.scss */
+  body:after {
+    content: 'SMALL';
+  }
+}
+@media all and (min-width: 33.813em) {
+  /* line 24, ../sass/helpers/_debug.scss */
+  body:after {
+    content: 'MEDIUM';
+  }
+}
+@media all and (min-width: 48em) {
+  /* line 31, ../sass/helpers/_debug.scss */
+  body:after {
+    content: 'LARGE';
+  }
+}
+@media all and (min-width: 64em) {
+  /* line 38, ../sass/helpers/_debug.scss */
+  body:after {
+    content: 'XLARGE';
+  }
 }

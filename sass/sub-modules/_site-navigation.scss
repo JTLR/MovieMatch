@@ -1,5 +1,6 @@
 .site-navigation {
 	ul {
+		display: none;
 		li {
 			padding: 0;
 			a {
@@ -21,6 +22,17 @@
 		line-height: rem(25);
 	}
 }
+.site-navigation-toggle {
+	float: right;
+	padding: 0 rem(15);
+	font-size: rem(20);
+	line-height: rem(30);
+	color: $color-white;
+	@include transition(.25s color ease);
+	&:hover {
+		color: $color-grey;
+	}
+}
 
 @media all and (min-width: $small) {
 	.site-navigation {
@@ -32,18 +44,32 @@
 			line-height: rem(33);
 		}
 	}
+	.site-navigation-toggle {
+		line-height: rem(45);			
+	}
 }
 
 @media all and (min-width: $medium) {
-	
+	.site-navigation {
+	}	
+	.site-navigation-toggle {
+		line-height: rem(50);	
+	}
 }
 
 @media all and (min-width: $large) {
 	.site-navigation {
 		float: right;
+		ul {
+			display: block;
+		}
 		input[type=search] {
 			line-height: rem(39);
 		}
+	}
+	.site-navigation-toggle {
+		float: left;
+		line-height: rem(55);
 	}
 }
 

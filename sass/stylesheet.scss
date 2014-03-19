@@ -20,12 +20,12 @@ $stylesheet: stylesheet;
 @import "layout/grid";
 
 // Sub Modules
-@import "sub-modules/site-header";
-@import "sub-modules/site-navigation";
 @import "sub-modules/buttons";
 @import "sub-modules/lists";
 @import "sub-modules/figure";
 @import "sub-modules/form";
+@import "sub-modules/site-header";
+@import "sub-modules/site-navigation";
 
 // Modules
 @import "modules/movie";
@@ -35,3 +35,6 @@ $stylesheet: stylesheet;
 // Themes
 
 // Pages
+
+// Debug
+@import "helpers/debug";
