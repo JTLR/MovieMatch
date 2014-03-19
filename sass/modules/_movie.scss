@@ -6,11 +6,12 @@
 
 }
 .movie-information {
+	padding:10px;
 	position: absolute;
-	bottom: rem(40);
+	bottom: rem(60);
 	left: 0;
 	width: 100%;
-	background-color: rgba($color-grey-dark, 0.5);
+	background-color: rgba($color-grey-dark, 0.7);
 	@include transform(translateY(100%));
 }
 
@@ -27,5 +28,9 @@
 }
 
 @media all and (min-width: $xlarge) {
-	
+	@include transition(.5s all ease);
+	&.is-active {
+		bottom: 0;
+		@include transform(translateY(0));
+	}
 }
