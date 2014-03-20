@@ -1,33 +1,36 @@
 // Application JS
-window.MovieMatch = Ember.Application.create();
+window.Moviematch = Ember.Application.create();
 
-MovieMatch.ApplicationAdapter = DS.FixtureAdapter.extend();
+Moviematch.ApplicationAdapter = DS.FixtureAdapter.extend();
 
 // Routers
-MovieMatch.Router.map(function() {
+Moviematch.Router.map(function() {
 	this.resource('moviematch', { path: '/' });
 });
 
-MovieMatch.MovieMatchRoute = Ember.Route.extend({
+Moviematch.MoviematchRoute = Ember.Route.extend({
 	model: function() {
-		return this.store.find('movie');
+		return this.store.find('movie', 3);
+	},
+	setupController: function(controller, model) {
+		controller.set('movie', model);
 	}
 });
 
 // Models
 
 // Movie
-MovieMatch.Movie = DS.Model.extend({
+Moviematch.Movie = DS.Model.extend({
 	title: DS.attr('string'),
 	year: DS.attr('number'),
-	genres: DS.attr('string'),
-	cast: DS.attr('string'),
+	genres: DS.attr('array'),
+	cast: DS.attr('array'),
 	director: DS.attr('string'),
 	synopsis: DS.attr('string'),
-	imgUrl: DS.attr('string'),
+	imgUrl: DS.attr('string')
 });
 
-MovieMatch.Movie.FIXTURES = [
+Moviematch.Movie.FIXTURES = [
 	{
 		id: 1,
 		title: 'The Wolf of Wall Street',
@@ -36,7 +39,7 @@ MovieMatch.Movie.FIXTURES = [
 		cast: ['Leonardo DiCaprio', 'Jonah Hill', 'Margot Robbie'],
 		director: 'Martin Scorsese',
 		synopsis: 'Based on the true story of Jordan Belfort, from his rise to a wealthy stockbroker living the high life to his fall involving crime, corruption and the federal government.',
-		imgUrl: 'the-wolf-of-wall-street.jpg'
+		imgUrl: 'images/the-wolf-of-wall-street.jpg'
 	},
 	{
 		id: 2,
@@ -46,7 +49,7 @@ MovieMatch.Movie.FIXTURES = [
 		cast: ['Leonardo DiCaprio', 'Kate Winslet', 'Billy Zane'],
 		director: 'James Cameron',
 		synopsis: 'A seventeen-year-old aristocrat, expecting to be married to a rich claimant by her mother, falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.',
-		imgUrl: 'titsnic.jpg'
+		imgUrl: 'images/titsnic.jpg'
 	},
 	{
 		id: 3,
@@ -56,20 +59,14 @@ MovieMatch.Movie.FIXTURES = [
 		cast: ['Chiwetel Ejiofor', 'Michael K. Williams', 'Michael Fassbender'],
 		director: 'Steve McQueen',
 		synopsis: 'In the antebellum United States, Solomon Northup, a free black man from upstate New York, is abducted and sold into slavery.',
-		imgUrl: '12-years-a-slave.jpg'
+		imgUrl: 'images/12-years-a-slave.jpg'
 	}
 ];
 
 // Controllers
-MovieMatch.MovieMatchController = Ember.ArrayController.extend({
+Moviematch.MoviematchController = Ember.ArrayController.extend();
 
-});
-
-MovieMatch.MovieController = Ember.ObjectController.extend({
-
-});
-
-
+Moviematch.MovieController = Ember.ObjectController.extend();
 
 // Presentational JS
 $(document).ready(function () {
