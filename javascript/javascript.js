@@ -23,6 +23,17 @@ Moviematch.MoviematchRoute = Ember.Route.extend({
 
 // Models
 
+// User
+Moviematch.User = DS.Model.extend({
+    firstName: DS.attr('string'),
+    lastName: DS.attr('string'),
+    email: DS.attr('string'),
+    password: DS.attr('string'),
+    watchList: DS.hasMany('movie', {async: true}),
+    likeList: DS.hasMany('movie', {async: true}),
+    dislikeList: DS.hasMany('movie', {async: true})
+});
+
 // Movie
 Moviematch.Movie = DS.Model.extend({
 	title: DS.attr('string'),
@@ -31,7 +42,9 @@ Moviematch.Movie = DS.Model.extend({
 	cast: DS.hasMany('person', {async: true}),
 	director: DS.belongsTo('person'),
 	synopsis: DS.attr('string'),
-	imgUrl: DS.attr('string')
+	imgUrl: DS.attr('string'),
+    likedBy: DS.hasMany('user', {async: true}),
+    dislikedBy: DS.hasMany('user', {async: true})
 });
 
 // Year
