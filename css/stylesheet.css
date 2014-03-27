@@ -18,6 +18,11 @@
   width: 100%;
 }
 
+/* line 16, ../sass/helpers/_classes.scss */
+.third {
+  width: 33%;
+}
+
 /*!
  *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -2265,54 +2270,54 @@ input {
 
 /* line 1, ../sass/base/_typography.scss */
 body {
-  font-family: Quicksand, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* line 5, ../sass/base/_typography.scss */
 h1 {
-  font-family: Quicksand, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.875rem;
   color: #333333;
 }
 
 /* line 10, ../sass/base/_typography.scss */
 h2 {
-  font-family: Quicksand, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.5625rem;
   color: #333333;
 }
 
 /* line 15, ../sass/base/_typography.scss */
 h3 {
-  font-family: Quicksand, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.4375rem;
   color: #333333;
 }
 
 /* line 20, ../sass/base/_typography.scss */
 h4 {
-  font-family: Quicksand, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.25rem;
   color: #333333;
 }
 
 /* line 25, ../sass/base/_typography.scss */
 h5 {
-  font-family: Quicksand, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.125rem;
   color: #333333;
 }
 
 /* line 30, ../sass/base/_typography.scss */
 h6 {
-  font-family: Quicksand, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1rem;
   color: #333333;
 }
 
 /* line 35, ../sass/base/_typography.scss */
 p {
-  font-family: Quicksand, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333333;
 }
 
@@ -2327,7 +2332,7 @@ dd,
 
 /* line 46, ../sass/base/_typography.scss */
 a, .anchor {
-  color: #62016d;
+  color: #4281cf;
   -webkit-transition: 0.25s color ease;
   -moz-transition: 0.25s color ease;
   -o-transition: 0.25s color ease;
@@ -2335,7 +2340,7 @@ a, .anchor {
 }
 /* line 49, ../sass/base/_typography.scss */
 a:hover, .anchor:hover {
-  color: #35013a;
+  color: #2d68b1;
 }
 
 /* line 53, ../sass/base/_typography.scss */
@@ -3659,7 +3664,7 @@ a:hover, .anchor:hover {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: Quicksand, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   -webkit-transition: 0.25s background-color ease;
   -moz-transition: 0.25s background-color ease;
@@ -3694,16 +3699,16 @@ a:hover, .anchor:hover {
 }
 /* line 29, ../sass/sub-modules/_buttons.scss */
 .button.blue {
-  background-color: #62016d;
+  background-color: #4281cf;
   color: white;
 }
 /* line 32, ../sass/sub-modules/_buttons.scss */
 .button.blue:hover {
-  background-color: #35013a;
+  background-color: #2d68b1;
 }
 /* line 35, ../sass/sub-modules/_buttons.scss */
 .button.blue:active {
-  background-color: #070008;
+  background-color: #235088;
 }
 /* line 39, ../sass/sub-modules/_buttons.scss */
 .button.grey {
@@ -3806,7 +3811,7 @@ img {
 
 /* line 1, ../sass/sub-modules/_form.scss */
 input {
-  font-family: Quicksand, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* line 8, ../sass/sub-modules/_form.scss */
@@ -3845,7 +3850,7 @@ input[type=submit].fa-x {
   width: 100%;
   margin: 0 0 2.5rem 0;
   padding: 1.25rem 0;
-  background-color: #62016d;
+  background-color: #4281cf;
 }
 /* line 7, ../sass/sub-modules/_site-header.scss */
 .site-header h1 a {
@@ -3987,19 +3992,14 @@ input[type=submit].fa-x {
 }
 /* line 27, ../sass/modules/_movie.scss */
 .movie-information a:hover, .movie-information .anchor:hover {
-  color: #62016d;
+  color: #4281cf;
 }
 
 @media all and (min-width: 48em) {
-  /* line 42, ../sass/modules/_movie.scss */
-  .movie {
-    background-color: #333333;
-  }
-
   /* line 45, ../sass/modules/_movie.scss */
   .movie-thumbnail {
     width: 100%;
-    margin: 0 0 1.875rem 0;
+    margin: 0 0 0 0;
   }
 
   /* line 49, ../sass/modules/_movie.scss */

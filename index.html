@@ -7,6 +7,7 @@
 <!--[if !IE]><!--> <html> <!--<![endif]-->
 <head>
 	<title>MovieMatch</title>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
 	<link rel="stylesheet" href="css/stylesheet.css">	
@@ -58,60 +59,72 @@
 			<div class="grid">
 				<div class="row">
 					<div class="col">
-						<article class="movie">
-							<div class="col large-12">
+						
+						<div class="col large-6">
+							<article class="movie">
 								<img class="movie-thumbnail" {{bind-attr src=movie.imgUrl}}>
-								<button class="button full green large-show">
+								<button class="button third green large-show">
 									<i class="fa fa-thumbs-o-up"></i>
 								</button>
-								<button class="button full red large-show">
+								<button class="button third red large-show">
 									<i class="fa fa-thumbs-o-down"></i>
 								</button>
-								<button class="button full blue large-show">Add to watch list</button>
-								<button class="button full grey large-show">Skip</button>
-							</div>
-							<div class="col large-12">
-								<div class="movie-information">
-									<h1 class="anchor js-toggle-movie-information">{{movie.title}}</h1>
-									<dl>
-										<dt>Year</dt>							
-										<dd>{{movie.year.year}}</dd>
-										<dt>Genres</dt>
-										<dd>
-											<ul class="inline">
-												{{#each genre in movie.genres}}
-													<li>
-														<a href="#">{{control genre}}</a>
-													</li>
-												{{/each}}
-											</ul>
-										</dd>
-										<dt>Cast</dt>
-										<dd>
-											<ul class="inline">
-												<li>
-													<a href="#">{{movie.cast.person}}</a>
-												</li>
-											</ul>
-										</dd>
-										<dt>Director</dt>
-										<dd>
-											<a href="#">{{movie.director.person}}</a>
-										</dd>
-										<dt>Synopsis</dt>
-										<dd>{{movie.synopsis}}</dd>
-									</dl>
-								</div>
-							</div>
-						</article>
-						<button class="button half green large-hide">
-							<i class="fa fa-thumbs-o-up"></i>
-						</button>
-						<button class="button half red large-hide">
-							<i class="fa fa-thumbs-o-down"></i>
-						</button>
-						<button class="button half blue large-hide">Add to watch list</button>
-						<button class="button half grey large-hide">Skip</button>
+								<button class="button third blue large-show">
+									<i class="fa fa-eye"></i>
+								</button>
+							
+							</article>
+						</div>
+
+
+						<div class="col large-6">
+							<article class="movie">
+								<img class="movie-thumbnail" {{bind-attr src=movie.imgUrl}}>
+								<button class="button third green large-show">
+									<i class="fa fa-thumbs-o-up"></i>
+								</button>
+								<button class="button third red large-show">
+									<i class="fa fa-thumbs-o-down"></i>
+								</button>
+								<button class="button third blue large-show">
+									<i class="fa fa-eye"></i>
+								</button>
+							
+							</article>
+						</div>
+
+						<div class="col large-6">
+							<article class="movie">
+								<img class="movie-thumbnail" {{bind-attr src=movie.imgUrl}}>
+								<button class="button third green large-show">
+									<i class="fa fa-thumbs-o-up"></i>
+								</button>
+								<button class="button third red large-show">
+									<i class="fa fa-thumbs-o-down"></i>
+								</button>
+								<button class="button third blue large-show">
+									<i class="fa fa-eye"></i>
+								</button>
+							
+							</article>
+						</div>
+
+						<div class="col large-6">
+							<article class="movie">
+								<img class="movie-thumbnail" {{bind-attr src=movie.imgUrl}}>
+								<button class="button third green large-show">
+									<i class="fa fa-thumbs-o-up"></i>
+								</button>
+								<button class="button third red large-show">
+									<i class="fa fa-thumbs-o-down"></i>
+								</button>
+								<button class="button third blue large-show">
+									<i class="fa fa-eye"></i>
+								</button>
+							
+							</article>
+						</div>
+						
 					</div>
 				</div>
 			</div>
