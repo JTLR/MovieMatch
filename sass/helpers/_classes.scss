@@ -7,30 +7,60 @@
 }
 
 // Widths
-.half {
+.base-half {
 	width: 50%;
 }
-.full {
+.base-full {
 	width: 100%;
 }
-.third {
-	width:33.33%;
+.base-third {
+	width: 33.33%;
 }
 
 @media all and (min-width: $small) {
-	.third {
-		width:100%;
+	.small-third {
+		width: 33.33%;
 	}
-}
-
-@media all and (min-width: $base) {
-	.third {
-		width:100%;
+	.small-half {
+		width: 50%;
+	}
+	.small-full {
+		width: 100%;
 	}
 }
 
 @media all and (min-width: $medium) {
-	.third {
+	.medium-third {
 		width:33.33%;
+	}
+	.medium-half {
+		width: 50%;
+	}
+	.medium-full {
+		width: 100%;
+	}
+}
+
+@media all and (min-width: $large) {
+	.large-third {
+		width: 33.33%;
+	}
+	.large-half {
+		width: 50%;
+	}
+	.large-full {
+		width: 100%;
+	}
+}
+
+@media all and (min-width: $xlarge) {
+	.xlarge-third {
+		width: 33.33%;
+	}
+	.xlarge-half {
+		width: 50%;
+	}
+	.xlarge-full {
+		width: 100%;
 	}
 }

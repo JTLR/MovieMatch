@@ -9,36 +9,82 @@
 }
 
 /* line 10, ../sass/helpers/_classes.scss */
-.half {
+.base-half {
   width: 50%;
 }
 
 /* line 13, ../sass/helpers/_classes.scss */
-.full {
+.base-full {
   width: 100%;
 }
 
 /* line 16, ../sass/helpers/_classes.scss */
-.third {
+.base-third {
   width: 33.33%;
 }
 
 @media all and (min-width: 30.063em) {
   /* line 21, ../sass/helpers/_classes.scss */
-  .third {
-    width: 100%;
+  .small-third {
+    width: 33.33%;
   }
-}
-@media all and (min-width: 0) {
+
+  /* line 24, ../sass/helpers/_classes.scss */
+  .small-half {
+    width: 50%;
+  }
+
   /* line 27, ../sass/helpers/_classes.scss */
-  .third {
+  .small-full {
     width: 100%;
   }
 }
 @media all and (min-width: 33.813em) {
   /* line 33, ../sass/helpers/_classes.scss */
-  .third {
+  .medium-third {
     width: 33.33%;
+  }
+
+  /* line 36, ../sass/helpers/_classes.scss */
+  .medium-half {
+    width: 50%;
+  }
+
+  /* line 39, ../sass/helpers/_classes.scss */
+  .medium-full {
+    width: 100%;
+  }
+}
+@media all and (min-width: 48em) {
+  /* line 45, ../sass/helpers/_classes.scss */
+  .large-third {
+    width: 33.33%;
+  }
+
+  /* line 48, ../sass/helpers/_classes.scss */
+  .large-half {
+    width: 50%;
+  }
+
+  /* line 51, ../sass/helpers/_classes.scss */
+  .large-full {
+    width: 100%;
+  }
+}
+@media all and (min-width: 64em) {
+  /* line 57, ../sass/helpers/_classes.scss */
+  .xlarge-third {
+    width: 33.33%;
+  }
+
+  /* line 60, ../sass/helpers/_classes.scss */
+  .xlarge-half {
+    width: 50%;
+  }
+
+  /* line 63, ../sass/helpers/_classes.scss */
+  .xlarge-full {
+    width: 100%;
   }
 }
 /*!
