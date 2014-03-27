@@ -37,6 +37,7 @@ $current-breakpoint: 1;
     }
     &.last {
         margin-right: 0 !important;
+        
     }
 }
 @each $breakpoint in $breakpoints {      

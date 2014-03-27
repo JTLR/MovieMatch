@@ -42,6 +42,94 @@ Moviematch.Movie.FIXTURES = [
 		synopsis: 'In the antebellum United States, Solomon Northup, a free black man from upstate New York, is abducted and sold into slavery.',
 		imgUrl: 'images/12-years-a-slave.jpg'
 	}
+	,
+	{
+		id: 5,
+		title: '12 Years a Slave',
+		year: 2,
+		genres: [1, 4, 6],
+		cast: [6, 7, 8],
+		director: 'Steve McQueen',
+		synopsis: 'In the antebellum United States, Solomon Northup, a free black man from upstate New York, is abducted and sold into slavery.',
+		imgUrl: 'images/12-years-a-slave.jpg'
+	}
+	,
+	{
+		id: 6,
+		title: '12 Years a Slave',
+		year: 2,
+		genres: [1, 4, 6],
+		cast: [6, 7, 8],
+		director: 'Steve McQueen',
+		synopsis: 'In the antebellum United States, Solomon Northup, a free black man from upstate New York, is abducted and sold into slavery.',
+		imgUrl: 'images/12-years-a-slave.jpg'
+	}
+	,
+	{
+		id: 7,
+		title: '12 Years a Slave',
+		year: 2,
+		genres: [1, 4, 6],
+		cast: [6, 7, 8],
+		director: 'Steve McQueen',
+		synopsis: 'In the antebellum United States, Solomon Northup, a free black man from upstate New York, is abducted and sold into slavery.',
+		imgUrl: 'images/12-years-a-slave.jpg'
+	}
+	,
+	{
+		id: 8,
+		title: '12 Years a Slave',
+		year: 2,
+		genres: [1, 4, 6],
+		cast: [6, 7, 8],
+		director: 'Steve McQueen',
+		synopsis: 'In the antebellum United States, Solomon Northup, a free black man from upstate New York, is abducted and sold into slavery.',
+		imgUrl: 'images/12-years-a-slave.jpg'
+	}
+	,
+	{
+		id: 9,
+		title: '12 Years a Slave',
+		year: 2,
+		genres: [1, 4, 6],
+		cast: [6, 7, 8],
+		director: 'Steve McQueen',
+		synopsis: 'In the antebellum United States, Solomon Northup, a free black man from upstate New York, is abducted and sold into slavery.',
+		imgUrl: 'images/12-years-a-slave.jpg'
+	}
+	,
+	{
+		id: 10,
+		title: '12 Years a Slave',
+		year: 2,
+		genres: [1, 4, 6],
+		cast: [6, 7, 8],
+		director: 'Steve McQueen',
+		synopsis: 'In the antebellum United States, Solomon Northup, a free black man from upstate New York, is abducted and sold into slavery.',
+		imgUrl: 'images/12-years-a-slave.jpg'
+	}
+	,
+	{
+		id: 11,
+		title: '12 Years a Slave',
+		year: 2,
+		genres: [1, 4, 6],
+		cast: [6, 7, 8],
+		director: 'Steve McQueen',
+		synopsis: 'In the antebellum United States, Solomon Northup, a free black man from upstate New York, is abducted and sold into slavery.',
+		imgUrl: 'images/12-years-a-slave.jpg'
+	}
+	,
+	{
+		id: 12,
+		title: '12 Years a Slave',
+		year: 2,
+		genres: [1, 4, 6],
+		cast: [6, 7, 8],
+		director: 'Steve McQueen',
+		synopsis: 'In the antebellum United States, Solomon Northup, a free black man from upstate New York, is abducted and sold into slavery.',
+		imgUrl: 'images/12-years-a-slave.jpg'
+	}
 
 ];
 

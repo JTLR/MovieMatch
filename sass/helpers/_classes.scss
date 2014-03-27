@@ -14,7 +14,7 @@
 	width: 100%;
 }
 .third {
-	width:33.33333333%;
+	width:33.33%;
 }
 
 @media all and (min-width: $small) {
@@ -31,6 +31,6 @@
 
 @media all and (min-width: $medium) {
 	.third {
-		width:33.333333333%;
+		width:33.33%;
 	}
 }
