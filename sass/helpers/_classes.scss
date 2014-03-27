@@ -16,3 +16,21 @@
 .third {
 	width:33.33333333%;
 }
+
+@media all and (min-width: $small) {
+	.third {
+		width:100%;
+	}
+}
+
+@media all and (min-width: $base) {
+	.third {
+		width:100%;
+	}
+}
+
+@media all and (min-width: $medium) {
+	.third {
+		width:33.333333333%;
+	}
+}

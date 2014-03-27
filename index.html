@@ -59,71 +59,37 @@
 			<div class="grid">
 				<div class="row">
 					<div class="col">
-						
-						<div class="col large-6">
-							<article class="movie">
-								<img class="movie-thumbnail" {{bind-attr src=movie.imgUrl}}>
-								<button class="button third green large-show">
-									<i class="fa fa-thumbs-o-up"></i>
-								</button>
-								<button class="button third red large-show">
-									<i class="fa fa-thumbs-o-down"></i>
-								</button>
-								<button class="button third blue large-show">
-									<i class="fa fa-eye"></i>
-								</button>
-							
-							</article>
+						<div class="col large-18">
+						<h1>Or maybe youve seen one of these?</h1>
 						</div>
+					</div>
+				</div>
 
 
+				<div class="row">
+					<div class="col">
+						{{#each movie in movie}}
 						<div class="col large-6">
-							<article class="movie">
-								<img class="movie-thumbnail" {{bind-attr src=movie.imgUrl}}>
-								<button class="button third green large-show">
-									<i class="fa fa-thumbs-o-up"></i>
-								</button>
-								<button class="button third red large-show">
-									<i class="fa fa-thumbs-o-down"></i>
-								</button>
-								<button class="button third blue large-show">
-									<i class="fa fa-eye"></i>
-								</button>
-							
-							</article>
-						</div>
 
-						<div class="col large-6">
 							<article class="movie">
+							
+								
 								<img class="movie-thumbnail" {{bind-attr src=movie.imgUrl}}>
-								<button class="button third green large-show">
+								<button class="button third green">
 									<i class="fa fa-thumbs-o-up"></i>
 								</button>
-								<button class="button third red large-show">
+								<button class="button third red">
 									<i class="fa fa-thumbs-o-down"></i>
 								</button>
-								<button class="button third blue large-show">
+								<button class="button third blue">
 									<i class="fa fa-eye"></i>
 								</button>
-							
+								
 							</article>
-						</div>
 
-						<div class="col large-6">
-							<article class="movie">
-								<img class="movie-thumbnail" {{bind-attr src=movie.imgUrl}}>
-								<button class="button third green large-show">
-									<i class="fa fa-thumbs-o-up"></i>
-								</button>
-								<button class="button third red large-show">
-									<i class="fa fa-thumbs-o-down"></i>
-								</button>
-								<button class="button third blue large-show">
-									<i class="fa fa-eye"></i>
-								</button>
-							
-							</article>
 						</div>
+						{{/each}}
+
 						
 					</div>
 				</div>

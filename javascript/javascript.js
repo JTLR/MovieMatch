@@ -14,7 +14,7 @@ Moviematch.Router.map(function() {
 
 Moviematch.MoviematchRoute = Ember.Route.extend({
 	model: function() {
-		return this.store.find('movie', 2);
+		return this.store.find('movie');
 	},
 	setupController: function(controller, model) {
 		controller.set('movie', model);

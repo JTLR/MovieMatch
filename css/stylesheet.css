@@ -23,6 +23,24 @@
   width: 33.33333333%;
 }
 
+@media all and (min-width: 30.063em) {
+  /* line 21, ../sass/helpers/_classes.scss */
+  .third {
+    width: 100%;
+  }
+}
+@media all and (min-width: 0) {
+  /* line 27, ../sass/helpers/_classes.scss */
+  .third {
+    width: 100%;
+  }
+}
+@media all and (min-width: 33.813em) {
+  /* line 33, ../sass/helpers/_classes.scss */
+  .third {
+    width: 33.333333333%;
+  }
+}
 /*!
  *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
