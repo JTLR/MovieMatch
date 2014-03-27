@@ -3907,6 +3907,29 @@ input[type=submit].fa-x {
     font-size: 1.875rem;
   }
 }
+/* line 1, ../sass/sub-modules/_site-footer.scss */
+.site-footer {
+  float: left;
+  clear: both;
+  width: 100%;
+  margin: 2.5rem 0 0 0;
+  padding: 0.625rem 0;
+  background-color: #4281cf;
+}
+/* line 7, ../sass/sub-modules/_site-footer.scss */
+.site-footer h1 a {
+  color: white;
+}
+/* line 9, ../sass/sub-modules/_site-footer.scss */
+.site-footer h1 a:hover {
+  color: #cccccc;
+}
+/* line 14, ../sass/sub-modules/_site-footer.scss */
+.site-footer p {
+  font-size: 14px;
+  color: white;
+}
+
 /* line 1, ../sass/sub-modules/_site-header.scss */
 .site-header {
   float: left;
