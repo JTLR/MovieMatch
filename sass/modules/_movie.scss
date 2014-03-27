@@ -3,6 +3,8 @@
 	overflow: hidden;
 }
 .movie-thumbnail {
+	margin:0;
+	display:block;
 
 }
 .movie-information {
@@ -30,7 +32,21 @@
 	}
 }
 
+.movie-name {
+	position:absolute;
+	bottom: rem(53);
+	left:0;
+	width:100%;
+	padding:rem(10);
+	background-color: rgba($color-brand, 0.8);
+	color:#FFFFFF;
+
+}
+
 @media all and (min-width: $small) {
+	.movie-name {
+		bottom: rem(56);
+	}
 
 }
 
@@ -57,6 +73,10 @@
 		&.is-active {
 			background-color: transparent;
 		}
+	}
+
+	.movie-name {
+		bottom: rem(63);
 	}
 }
 
