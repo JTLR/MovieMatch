@@ -32,21 +32,23 @@
 	}
 }
 
+.movie-container {
+	position:relative;
+}
+
 .movie-name {
 	position:absolute;
-	bottom: rem(53);
 	left:0;
 	width:100%;
 	padding:rem(10);
 	background-color: rgba($color-brand, 0.8);
 	color:#FFFFFF;
+	bottom:0;
 
 }
 
 @media all and (min-width: $small) {
-	.movie-name {
-		bottom: rem(56);
-	}
+	
 
 }
 
@@ -75,9 +77,7 @@
 		}
 	}
 
-	.movie-name {
-		bottom: rem(63);
-	}
+	
 }
 
 @media all and (min-width: $xlarge) {

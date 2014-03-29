@@ -4089,30 +4089,29 @@ input[type=submit].fa-x {
 }
 
 /* line 35, ../sass/modules/_movie.scss */
+.movie-container {
+  position: relative;
+}
+
+/* line 39, ../sass/modules/_movie.scss */
 .movie-name {
   position: absolute;
-  bottom: 3.3125rem;
   left: 0;
   width: 100%;
   padding: 0.625rem;
   background-color: rgba(66, 129, 207, 0.8);
   color: #FFFFFF;
+  bottom: 0;
 }
 
-@media all and (min-width: 30.063em) {
-  /* line 47, ../sass/modules/_movie.scss */
-  .movie-name {
-    bottom: 3.5rem;
-  }
-}
 @media all and (min-width: 48em) {
-  /* line 61, ../sass/modules/_movie.scss */
+  /* line 63, ../sass/modules/_movie.scss */
   .movie-thumbnail {
     width: 100%;
     margin: 0 0 0 0;
   }
 
-  /* line 65, ../sass/modules/_movie.scss */
+  /* line 67, ../sass/modules/_movie.scss */
   .movie-information {
     position: static;
     bottom: auto;
@@ -4126,14 +4125,9 @@ input[type=submit].fa-x {
     -o-transform: translateY(0);
     transform: translateY(0);
   }
-  /* line 73, ../sass/modules/_movie.scss */
+  /* line 75, ../sass/modules/_movie.scss */
   .movie-information.is-active {
     background-color: transparent;
-  }
-
-  /* line 78, ../sass/modules/_movie.scss */
-  .movie-name {
-    bottom: 3.9375rem;
   }
 }
 /* line 2, ../sass/helpers/_debug.scss */
