@@ -14,7 +14,7 @@ $breakpoints: $base, $small, $medium, $large, $xlarge;
 $breakpoint-alias: "base", "small", "medium", "large", "xlarge";
 
 // Colors
-$color-brand: #4281cf;
+$color-brand: #254d7d;
 $color-secondary: darken($color-brand, 10%);
 $color-grey: #ccc;
 $color-grey-dark: #333;
@@ -30,5 +30,5 @@ $spacing-large: rem(30);
 $spacing-small: rem(10);
 
 // Fonts
-$font-primary: 'Roboto', "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-primary: 'Raleway', "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-secondary: Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;

@@ -1,0 +1,12 @@
+.fat-button {
+	padding:5px;
+	color: $color-white;
+	@include transition(.5s all ease);
+	background-color: rgba($color-brand, 1);
+	float: left;
+}
+.fat-button:hover {
+	color: $color-white;
+	background-color: rgba($color-secondary, 1);
+}
+

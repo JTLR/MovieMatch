@@ -1,4 +1,6 @@
 .site-footer {
+	bottom:0;
+	position:fixed;
 	@include clear-fix;
 	margin: rem(40) 0 0 0;
 	padding: rem(10) 0;

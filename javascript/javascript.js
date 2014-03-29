@@ -143,9 +143,15 @@ Moviematch.GenreController = Ember.ObjectController.extend();
 Moviematch.PersonController = Ember.ObjectController.extend();
 
 // Presentational JS
-$(document).ready(function () {
-	var movieInformation = $('.movie-information')
-    $('h1', movieInformation).click(function(){
-        movieInformation.toggleClass( "is-active" );
-    });
- });  
+$(window).load(function () {
+	
+ 
+	 $(".like-movie").each(function () {
+	 	$(this).hover(function () {
+	 	console.log('yes');
+      $('.movie-information', $(this).siblings(".movie-container")).addClass("movie-information-active");  //Add the active class to the area is hovered
+  }, function () {
+  	console.log('no');
+      $('.movie-information', $(this).siblings(".movie-container")).removeClass("movie-information-active");
+  });});
+ }); 
