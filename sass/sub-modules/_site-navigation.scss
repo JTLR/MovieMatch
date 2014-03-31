@@ -1,12 +1,17 @@
 .site-navigation {
 	ul {
 		display: none;
+		padding:0;
 		li {
-			padding: 0;
+			padding-bottom:0;
+			margin-right:0;
 			a {
 				color: $color-white;
+				padding: rem(20);
+				display: block;
+				@include transition(.25s background-color ease);
 				&:hover {
-					color: $color-grey;
+					background-color: $color-secondary;
 				}
 			}
 			&.is-active {
@@ -14,19 +19,18 @@
 					color: $color-grey-dark;
 				}
 			}
+
 		}
 	}
 	input[type=search] {
 		max-width: rem(200);
 		padding: rem(10);
-		line-height: rem(25);
 	}
 }
 .site-navigation-toggle {
 	float: right;
 	padding: 0 rem(15);
 	font-size: rem(20);
-	line-height: rem(30);
 	color: $color-white;
 	@include transition(.25s color ease);
 	&:hover {
@@ -41,11 +45,9 @@
 			}
 		}
 		input[type=search] {
-			line-height: rem(33);
 		}
 	}
-	.site-navigation-toggle {
-		line-height: rem(45);			
+	.site-navigation-toggle {		
 	}
 }
 
@@ -53,7 +55,6 @@
 	.site-navigation {
 	}	
 	.site-navigation-toggle {
-		line-height: rem(50);	
 	}
 }
 
@@ -64,19 +65,16 @@
 			display: block;
 		}
 		input[type=search] {
-			line-height: rem(39);
 		}
 	}
 	.site-navigation-toggle {
 		float: left;
-		line-height: rem(55);
 	}
 }
 
 @media all and (min-width: $xlarge) {
 	.site-navigation {
 		input[type=search] {
-			line-height: rem(45);
 		}
 	}	
 }

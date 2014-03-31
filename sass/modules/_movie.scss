@@ -1,11 +1,16 @@
 .movie {
 	position: relative;
 	overflow: hidden;
+	margin-bottom:rem(30);
 }
 .movie-thumbnail {
 	margin:0;
 	display:block;
-
+	position:absolute;
+	top:0;
+	left:0;
+	height:100%;
+	width:auto;
 }
 .movie-information {
 	width:100%;
@@ -67,7 +72,9 @@
 
 .movie-container {
 	position:relative;
-	
+	padding-bottom:150%;
+	overflow:hidden;
+	@include clear-fix;
 }
 
 .movie-name {

@@ -3910,7 +3910,6 @@ input[type=submit].fa-x {
 /* line 1, ../sass/sub-modules/_site-footer.scss */
 .site-footer {
   bottom: 0;
-  position: fixed;
   float: left;
   clear: both;
   width: 100%;
@@ -3918,15 +3917,15 @@ input[type=submit].fa-x {
   padding: 0.625rem 0;
   background-color: #254d7d;
 }
-/* line 9, ../sass/sub-modules/_site-footer.scss */
+/* line 8, ../sass/sub-modules/_site-footer.scss */
 .site-footer h1 a {
   color: white;
 }
-/* line 11, ../sass/sub-modules/_site-footer.scss */
+/* line 10, ../sass/sub-modules/_site-footer.scss */
 .site-footer h1 a:hover {
   color: #cccccc;
 }
-/* line 16, ../sass/sub-modules/_site-footer.scss */
+/* line 15, ../sass/sub-modules/_site-footer.scss */
 .site-footer p {
   font-size: 14px;
   color: white;
@@ -3934,18 +3933,27 @@ input[type=submit].fa-x {
 
 /* line 1, ../sass/sub-modules/_site-header.scss */
 .site-header {
+  position: fixed;
+  z-index: 1;
   float: left;
   clear: both;
   width: 100%;
   margin: 0 0 2.5rem 0;
-  padding: 1.25rem 0;
   background-color: #254d7d;
+  -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.53);
+  -moz-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.53);
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.53);
 }
-/* line 7, ../sass/sub-modules/_site-header.scss */
+/* line 8, ../sass/sub-modules/_site-header.scss */
+.site-header h1 {
+  line-height: 3.75rem;
+  font-size: 1.875rem;
+}
+/* line 11, ../sass/sub-modules/_site-header.scss */
 .site-header h1 a {
   color: white;
 }
-/* line 9, ../sass/sub-modules/_site-header.scss */
+/* line 13, ../sass/sub-modules/_site-header.scss */
 .site-header h1 a:hover {
   color: #cccccc;
 }
@@ -3953,88 +3961,66 @@ input[type=submit].fa-x {
 /* line 2, ../sass/sub-modules/_site-navigation.scss */
 .site-navigation ul {
   display: none;
-}
-/* line 4, ../sass/sub-modules/_site-navigation.scss */
-.site-navigation ul li {
   padding: 0;
 }
-/* line 6, ../sass/sub-modules/_site-navigation.scss */
-.site-navigation ul li a {
-  color: white;
+/* line 5, ../sass/sub-modules/_site-navigation.scss */
+.site-navigation ul li {
+  padding-bottom: 0;
+  margin-right: 0;
 }
 /* line 8, ../sass/sub-modules/_site-navigation.scss */
-.site-navigation ul li a:hover {
-  color: #cccccc;
+.site-navigation ul li a {
+  color: white;
+  padding: 1.25rem;
+  display: block;
+  -webkit-transition: 0.25s background-color ease;
+  -moz-transition: 0.25s background-color ease;
+  -o-transition: 0.25s background-color ease;
+  transition: 0.25s background-color ease;
 }
 /* line 13, ../sass/sub-modules/_site-navigation.scss */
+.site-navigation ul li a:hover {
+  background-color: #193556;
+}
+/* line 18, ../sass/sub-modules/_site-navigation.scss */
 .site-navigation ul li.is-active a {
   color: #333333;
 }
-/* line 19, ../sass/sub-modules/_site-navigation.scss */
+/* line 25, ../sass/sub-modules/_site-navigation.scss */
 .site-navigation input[type=search] {
   max-width: 12.5rem;
   padding: 0.625rem;
-  line-height: 1.5625rem;
 }
 
-/* line 25, ../sass/sub-modules/_site-navigation.scss */
+/* line 30, ../sass/sub-modules/_site-navigation.scss */
 .site-navigation-toggle {
   float: right;
   padding: 0 0.9375rem;
   font-size: 1.25rem;
-  line-height: 1.875rem;
   color: white;
   -webkit-transition: 0.25s color ease;
   -moz-transition: 0.25s color ease;
   -o-transition: 0.25s color ease;
   transition: 0.25s color ease;
 }
-/* line 32, ../sass/sub-modules/_site-navigation.scss */
+/* line 36, ../sass/sub-modules/_site-navigation.scss */
 .site-navigation-toggle:hover {
   color: #cccccc;
 }
 
-@media all and (min-width: 30.063em) {
-  /* line 43, ../sass/sub-modules/_site-navigation.scss */
-  .site-navigation input[type=search] {
-    line-height: 2.0625rem;
-  }
-
-  /* line 47, ../sass/sub-modules/_site-navigation.scss */
-  .site-navigation-toggle {
-    line-height: 2.8125rem;
-  }
-}
-@media all and (min-width: 33.813em) {
-  /* line 55, ../sass/sub-modules/_site-navigation.scss */
-  .site-navigation-toggle {
-    line-height: 3.125rem;
-  }
-}
 @media all and (min-width: 48em) {
-  /* line 61, ../sass/sub-modules/_site-navigation.scss */
+  /* line 62, ../sass/sub-modules/_site-navigation.scss */
   .site-navigation {
     float: right;
   }
-  /* line 63, ../sass/sub-modules/_site-navigation.scss */
+  /* line 64, ../sass/sub-modules/_site-navigation.scss */
   .site-navigation ul {
     display: block;
-  }
-  /* line 66, ../sass/sub-modules/_site-navigation.scss */
-  .site-navigation input[type=search] {
-    line-height: 2.4375rem;
   }
 
   /* line 70, ../sass/sub-modules/_site-navigation.scss */
   .site-navigation-toggle {
     float: left;
-    line-height: 3.4375rem;
-  }
-}
-@media all and (min-width: 64em) {
-  /* line 78, ../sass/sub-modules/_site-navigation.scss */
-  .site-navigation input[type=search] {
-    line-height: 2.8125rem;
   }
 }
 /* line 1, ../sass/sub-modules/_style-guide.scss */
@@ -4055,19 +4041,30 @@ input[type=submit].fa-x {
   background-color: #193556;
 }
 
+/* line 1, ../sass/sub-modules/_site-main.scss */
+.site-main {
+  padding-top: 6.25rem;
+}
+
 /* line 1, ../sass/modules/_movie.scss */
 .movie {
   position: relative;
   overflow: hidden;
+  margin-bottom: 1.875rem;
 }
 
-/* line 5, ../sass/modules/_movie.scss */
+/* line 6, ../sass/modules/_movie.scss */
 .movie-thumbnail {
   margin: 0;
   display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: auto;
 }
 
-/* line 10, ../sass/modules/_movie.scss */
+/* line 15, ../sass/modules/_movie.scss */
 .movie-information {
   width: 100%;
   opacity: 0;
@@ -4079,21 +4076,21 @@ input[type=submit].fa-x {
   transition: 0.25s opacity ease, 0.25s padding ease, 0.25s height ease;
 }
 
-/* line 17, ../sass/modules/_movie.scss */
+/* line 22, ../sass/modules/_movie.scss */
 .movie-information-hidden-red {
   width: 100%;
   opacity: 0;
   position: absolute;
 }
 
-/* line 22, ../sass/modules/_movie.scss */
+/* line 27, ../sass/modules/_movie.scss */
 .movie-information-hidden-brand {
   width: 100%;
   opacity: 0;
   position: absolute;
 }
 
-/* line 27, ../sass/modules/_movie.scss */
+/* line 32, ../sass/modules/_movie.scss */
 .movie-information-active {
   position: absolute;
   left: 0;
@@ -4107,7 +4104,7 @@ input[type=submit].fa-x {
   opacity: 1;
 }
 
-/* line 40, ../sass/modules/_movie.scss */
+/* line 45, ../sass/modules/_movie.scss */
 .movie-information-red {
   position: absolute;
   left: 0;
@@ -4121,7 +4118,7 @@ input[type=submit].fa-x {
   opacity: 1;
 }
 
-/* line 52, ../sass/modules/_movie.scss */
+/* line 57, ../sass/modules/_movie.scss */
 .movie-information-brand {
   position: absolute;
   left: 0;
@@ -4135,17 +4132,22 @@ input[type=submit].fa-x {
   opacity: 1;
 }
 
-/* line 64, ../sass/modules/_movie.scss */
+/* line 69, ../sass/modules/_movie.scss */
 .movie-information h4 {
   color: #FFFFFF !important;
 }
 
-/* line 68, ../sass/modules/_movie.scss */
+/* line 73, ../sass/modules/_movie.scss */
 .movie-container {
   position: relative;
+  padding-bottom: 150%;
+  overflow: hidden;
+  float: left;
+  clear: both;
+  width: 100%;
 }
 
-/* line 73, ../sass/modules/_movie.scss */
+/* line 80, ../sass/modules/_movie.scss */
 .movie-name {
   position: absolute;
   left: 0;
@@ -4157,7 +4159,7 @@ input[type=submit].fa-x {
 }
 
 @media all and (min-width: 48em) {
-  /* line 97, ../sass/modules/_movie.scss */
+  /* line 104, ../sass/modules/_movie.scss */
   .movie-thumbnail {
     width: 100%;
     margin: 0 0 0 0;
