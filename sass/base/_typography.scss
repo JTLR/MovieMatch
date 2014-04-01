@@ -57,7 +57,7 @@ p {
 	font-family: $font-primary;
 	color: $color-grey-dark;
 	font-size: rem(16);
-	line-height: rem(21);
+	line-height: rem(30);
 }
 
 strong {
@@ -150,14 +150,18 @@ a, .anchor {
 		font-size: rem(23);
 		line-height: rem(28);
 	}
-	p,
+	
 	li,
 	dt,
 	dd,
 	.button {
 		font-size: rem(23);
 		line-height: rem(28);
-	}		
+	}	
+	p {
+		font-size: rem(23);
+		line-height: rem(35);
+	}	
 }
 
 @media all and (min-width: $xlarge) {

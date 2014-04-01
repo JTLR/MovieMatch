@@ -1,17 +1,33 @@
+body.landing-page {
+
+	background:url('../images/new-bg.jpg') no-repeat center rem(68);
+	.strip {
+		margin-top:rem(450);
+		+ .strip {
+			margin-top:0;
+		}
+	}
+}
+
 .hero-container {
+	position:fixed;
+	top:0;
+	left:0;
 	width:100%;
-	background:url('../images/hero-bg-colour-2.jpg') no-repeat center top;
+	z-index:-1;
+	
 
 	@include background-size(cover);
 	@include clear-fix;
-	height: rem(650);
+
+	height: rem(500);
 }
 
 .hero-text-container {
 	width:100%;
 	display:table;
 	top:0;
-	height: rem(600);
+	height: rem(750);
 
 }
 
@@ -20,6 +36,7 @@
 	text-align:center;
 	display:table-cell;
 	vertical-align:middle;
+
 
 	
 	p {

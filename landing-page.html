@@ -17,11 +17,12 @@
 	<script src="javascript/libraries/ember.js" type="text/javascript"></script>
 	<script src="javascript/libraries/ember-data.js" type="text/javascript"></script>
 	<script src="javascript/libraries/localstorage_adapter.js" type="text/javascript"></script>
+	<script src="javascript/libraries/jquery.typer.js" type="text/javascript"></script>
 	<script src="javascript/javascript.js" type="text/javascript"></script>	
 	<!--<script src="javascript/fixtures.js" type="text/javascript"></script>-->
 	<script src="javascript/helpers.js" type="text/javascript"></script>	
 </head>
-<body>
+<body class="landing-page">
 	<script type="text/x-handlebars" data-template-name="moviematch">
 		<header class="site-header">
 			<div class="grid">
@@ -41,6 +42,9 @@
 								</li>
 								<li>
 									<a href="#">Watch list</a>
+								</li>
+								<li>
+									<a href="#">Login</a>
 								</li>
 								<li>
 									<a href="#" class="button green">Sign up</a>
@@ -66,10 +70,10 @@
 			<div class="hero-container">				
 			
 				<div class="row">
-					<div class="col large-18 large-push-3">
+					<div class="col large-20 large-push-2">
 							<div class="hero-text-container">
 								<div class="hero-text">
-								<p>Find the <strong>perfect</strong> movie for <strong>you</strong></p>
+								<p>Like <strong><span id="js-typist-1"></span></strong>? Watch <strong><span id="js-typist-2"></span></strong></p>
 								</div>
 							</div>
 						
@@ -77,18 +81,16 @@
 				</div>
 			</div>
 
-			<div class="strip">
-				<div class="row">
-					<div class="col">
+			<div class="strip fade">
 
-					
-
-					</div>					
-				</div>
 			</div>
 
-			<div class="strip">
+			
+
+			<div class="strip white">
+
 				<div class="row">
+
 					<div class="col large-13">
 					<h1>Movies are personal to <strong>you</strong></h1>
 
@@ -105,10 +107,11 @@
 
 			<div class="strip grey">
 				<div class="row">
-					<div class="col">
-					<h1>Movies are personal to you</h1>
+					<div class="col large-6">123</div>
+					<div class="col large-13 large-push-5">
+					<h1>Find movies <strong>your</strong> way</h1>
 
-					<p>Blag blah blayagah</p>
+					<p>Find movies </p>
 					</div>
 				</div>
 			</div>

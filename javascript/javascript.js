@@ -143,6 +143,27 @@ Moviematch.GenreController = Ember.ObjectController.extend();
 Moviematch.PersonController = Ember.ObjectController.extend();
 
 // Presentational JS
+$(document).ready(function () {
+
+			var win = $(window),
+            foo = $('#js-typist-1'),
+            bar = $('#js-typist-2');
+ 
+            foo.typer(['Die Hard', 'Inception', 'Titanic', 'Knocked up', 'Project X', 'Coach Carter', 'Toy Story', 'Blindness', 'About a Boy', 'Casino'], {
+            	delay: 5000,
+            	duration: 1000
+            });
+            setTimeout(function() { 
+            	bar.typer(['Air Force One', 'Source Code', 'Dear John', 'Role Models', 'The Hangover', 'Goal', 'Madagascar', 'Pontypool', 'Juno', 'Scarface'], {
+            		delay: 5000,
+            		duration: 1000
+            	});
+            }, 1250);
+
+
+});
+
+
 $(window).load(function () {
 	
  
@@ -155,3 +176,26 @@ $(window).load(function () {
       $('.movie-information', $(this).siblings(".movie-container")).removeClass("movie-information-active");
   });});
  }); 
+
+
+var body;
+var backgroundPosition;
+var scrollPosition;
+var parallaxAmount = 1.5;
+var heroText;
+ 
+	$(window).load(function () {
+		heroText = $('.hero-container');
+		body = $('body');
+		});
+		 
+			$(window).scroll(function () {
+
+			scrollPosition = $(window).scrollTop();
+			backgroundPosition = (Math.floor(scrollPosition/parallaxAmount));
+			heroPosition = -(Math.floor(scrollPosition/parallaxAmount));
+			body.css('background-position', 'center ' + backgroundPosition + 'px');
+			heroText.css('top', (heroPosition * 2.4) + 'px');
+	});
+
+

@@ -1,4 +1,5 @@
 .strip {
+
 	@include clear-fix;
 	padding: rem(40) 0;
 
@@ -7,5 +8,18 @@
 	}
 	&.brand {
 		background-color: $color-brand;		
+	}
+	&.white {
+		background-color: $color-white;		
+	}
+}
+
+.fade {
+	background: transparent url(../images/fade.png) repeat top left;
+	padding:0 !important; 
+	height: rem(289);
+	img {
+		display: block;
+		height:auto;
 	}
 }

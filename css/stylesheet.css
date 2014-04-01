@@ -2404,7 +2404,7 @@ p {
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333333;
   font-size: 1rem;
-  line-height: 1.3125rem;
+  line-height: 1.875rem;
 }
 
 /* line 63, ../sass/base/_typography.scss */
@@ -2530,13 +2530,18 @@ a:hover, .anchor:hover {
   }
 
   /* line 157, ../sass/base/_typography.scss */
-  p,
   li,
   dt,
   dd,
   .button {
     font-size: 1.4375rem;
     line-height: 1.75rem;
+  }
+
+  /* line 161, ../sass/base/_typography.scss */
+  p {
+    font-size: 1.4375rem;
+    line-height: 2.1875rem;
   }
 }
 /* line 15, ../sass/layout/_grid.scss */
@@ -4122,13 +4127,29 @@ input[type=submit].fa-x {
   width: 100%;
   padding: 2.5rem 0;
 }
-/* line 5, ../sass/sub-modules/_strip.scss */
+/* line 6, ../sass/sub-modules/_strip.scss */
 .strip.grey {
   background-color: #cccccc;
 }
-/* line 8, ../sass/sub-modules/_strip.scss */
+/* line 9, ../sass/sub-modules/_strip.scss */
 .strip.brand {
   background-color: #254d7d;
+}
+/* line 12, ../sass/sub-modules/_strip.scss */
+.strip.white {
+  background-color: white;
+}
+
+/* line 17, ../sass/sub-modules/_strip.scss */
+.fade {
+  background: transparent url(../images/fade.png) repeat top left;
+  padding: 0 !important;
+  height: 18.0625rem;
+}
+/* line 21, ../sass/sub-modules/_strip.scss */
+.fade img {
+  display: block;
+  height: auto;
 }
 
 /* line 1, ../sass/modules/_movie.scss */
@@ -4251,9 +4272,25 @@ input[type=submit].fa-x {
   }
 }
 /* line 1, ../sass/modules/_landing-page.scss */
+body.landing-page {
+  background: url("../images/new-bg.jpg") no-repeat center 4.25rem;
+}
+/* line 4, ../sass/modules/_landing-page.scss */
+body.landing-page .strip {
+  margin-top: 28.125rem;
+}
+/* line 6, ../sass/modules/_landing-page.scss */
+body.landing-page .strip + .strip {
+  margin-top: 0;
+}
+
+/* line 12, ../sass/modules/_landing-page.scss */
 .hero-container {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  background: url("../images/hero-bg-colour-2.jpg") no-repeat center top;
+  z-index: -1;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -4261,24 +4298,24 @@ input[type=submit].fa-x {
   float: left;
   clear: both;
   width: 100%;
-  height: 40.625rem;
+  height: 31.25rem;
 }
 
-/* line 10, ../sass/modules/_landing-page.scss */
+/* line 26, ../sass/modules/_landing-page.scss */
 .hero-text-container {
   width: 100%;
   display: table;
   top: 0;
-  height: 37.5rem;
+  height: 46.875rem;
 }
 
-/* line 19, ../sass/modules/_landing-page.scss */
+/* line 35, ../sass/modules/_landing-page.scss */
 .hero-text {
   text-align: center;
   display: table-cell;
   vertical-align: middle;
 }
-/* line 25, ../sass/modules/_landing-page.scss */
+/* line 42, ../sass/modules/_landing-page.scss */
 .hero-text p {
   color: #254d7d;
   font-size: 3.25rem;
