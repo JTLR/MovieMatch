@@ -2335,57 +2335,64 @@ input {
 /* line 1, ../sass/base/_typography.scss */
 body {
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
 }
 
-/* line 5, ../sass/base/_typography.scss */
+/* line 6, ../sass/base/_typography.scss */
 h1 {
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.875rem;
   color: #333333;
 }
 
-/* line 10, ../sass/base/_typography.scss */
+/* line 11, ../sass/base/_typography.scss */
 h2 {
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.5625rem;
   color: #333333;
 }
 
-/* line 15, ../sass/base/_typography.scss */
+/* line 16, ../sass/base/_typography.scss */
 h3 {
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.4375rem;
   color: #333333;
 }
 
-/* line 20, ../sass/base/_typography.scss */
+/* line 21, ../sass/base/_typography.scss */
 h4 {
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.25rem;
   color: #333333;
 }
 
-/* line 25, ../sass/base/_typography.scss */
+/* line 26, ../sass/base/_typography.scss */
 h5 {
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.125rem;
   color: #333333;
 }
 
-/* line 30, ../sass/base/_typography.scss */
+/* line 31, ../sass/base/_typography.scss */
 h6 {
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1rem;
   color: #333333;
 }
 
-/* line 35, ../sass/base/_typography.scss */
+/* line 36, ../sass/base/_typography.scss */
 p {
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333333;
 }
 
-/* line 43, ../sass/base/_typography.scss */
+/* line 41, ../sass/base/_typography.scss */
+strong {
+  font-weight: bold;
+  border-bottom: 1px dashed #333333;
+}
+
+/* line 50, ../sass/base/_typography.scss */
 p,
 li,
 dt,
@@ -2394,7 +2401,7 @@ dd,
   font-size: 1rem;
 }
 
-/* line 46, ../sass/base/_typography.scss */
+/* line 53, ../sass/base/_typography.scss */
 a, .anchor {
   color: #254d7d;
   -webkit-transition: 0.25s color ease;
@@ -2402,53 +2409,53 @@ a, .anchor {
   -o-transition: 0.25s color ease;
   transition: 0.25s color ease;
 }
-/* line 49, ../sass/base/_typography.scss */
+/* line 56, ../sass/base/_typography.scss */
 a:hover, .anchor:hover {
   color: #193556;
 }
 
-/* line 53, ../sass/base/_typography.scss */
+/* line 60, ../sass/base/_typography.scss */
 .anchor {
   cursor: pointer;
 }
 
-/* line 57, ../sass/base/_typography.scss */
+/* line 64, ../sass/base/_typography.scss */
 .sub-title {
   font-family: Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 @media all and (min-width: 30.063em) {
-  /* line 62, ../sass/base/_typography.scss */
+  /* line 69, ../sass/base/_typography.scss */
   h1 {
     font-size: 2.1875rem;
   }
 
-  /* line 65, ../sass/base/_typography.scss */
+  /* line 72, ../sass/base/_typography.scss */
   h2 {
     font-size: 1.875rem;
   }
 
-  /* line 68, ../sass/base/_typography.scss */
+  /* line 75, ../sass/base/_typography.scss */
   h3 {
     font-size: 1.6875rem;
   }
 
-  /* line 71, ../sass/base/_typography.scss */
+  /* line 78, ../sass/base/_typography.scss */
   h4 {
     font-size: 1.4375rem;
   }
 
-  /* line 74, ../sass/base/_typography.scss */
+  /* line 81, ../sass/base/_typography.scss */
   h5 {
     font-size: 1.25rem;
   }
 
-  /* line 77, ../sass/base/_typography.scss */
+  /* line 84, ../sass/base/_typography.scss */
   h6 {
     font-size: 1.125rem;
   }
 
-  /* line 84, ../sass/base/_typography.scss */
+  /* line 91, ../sass/base/_typography.scss */
   p,
   li,
   dt,
@@ -2458,37 +2465,37 @@ a:hover, .anchor:hover {
   }
 }
 @media all and (min-width: 48em) {
-  /* line 93, ../sass/base/_typography.scss */
+  /* line 100, ../sass/base/_typography.scss */
   h1 {
     font-size: 2.5rem;
   }
 
-  /* line 96, ../sass/base/_typography.scss */
+  /* line 103, ../sass/base/_typography.scss */
   h2 {
     font-size: 2.1875rem;
   }
 
-  /* line 99, ../sass/base/_typography.scss */
+  /* line 106, ../sass/base/_typography.scss */
   h3 {
     font-size: 2rem;
   }
 
-  /* line 102, ../sass/base/_typography.scss */
+  /* line 109, ../sass/base/_typography.scss */
   h4 {
     font-size: 1.75rem;
   }
 
-  /* line 105, ../sass/base/_typography.scss */
+  /* line 112, ../sass/base/_typography.scss */
   h5 {
     font-size: 1.5625rem;
   }
 
-  /* line 108, ../sass/base/_typography.scss */
+  /* line 115, ../sass/base/_typography.scss */
   h6 {
     font-size: 1.4375rem;
   }
 
-  /* line 115, ../sass/base/_typography.scss */
+  /* line 122, ../sass/base/_typography.scss */
   p,
   li,
   dt,
@@ -4043,7 +4050,7 @@ input[type=submit].fa-x {
 
 /* line 1, ../sass/sub-modules/_site-main.scss */
 .site-main {
-  padding-top: 6.25rem;
+  padding-top: 3.9375rem;
 }
 
 /* line 1, ../sass/modules/_movie.scss */
@@ -4165,6 +4172,36 @@ input[type=submit].fa-x {
     margin: 0 0 0 0;
   }
 }
+/* line 1, ../sass/modules/_landing-page.scss */
+.hero-container {
+  width: 100%;
+  background-image: url("../images/hero-bg.jpg");
+  float: left;
+  clear: both;
+  width: 100%;
+}
+
+/* line 7, ../sass/modules/_landing-page.scss */
+.hero-text-container {
+  width: 100%;
+  display: table;
+  height: 32.8125rem;
+  top: 0;
+}
+
+/* line 15, ../sass/modules/_landing-page.scss */
+.hero-text {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 20, ../sass/modules/_landing-page.scss */
+.hero-text h1 {
+  font-size: 3.25rem;
+  padding: 1.875rem 1.25rem;
+  background-color: white;
+}
+
 /* line 2, ../sass/helpers/_debug.scss */
 body:after {
   display: block;

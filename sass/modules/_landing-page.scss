@@ -1,0 +1,25 @@
+.hero-container {
+	width:100%;
+	background-image:url('../images/hero-bg.jpg');
+	@include clear-fix;
+}
+
+.hero-text-container {
+	width:100%;
+	display:table;
+	height: rem(525);
+	top:0;
+}
+
+
+.hero-text {
+	text-align:center;
+	display:table-cell;
+	vertical-align:middle;
+	
+	h1 {
+		font-size: rem(52);
+		padding: rem(30) rem(20);
+		background-color:$color-white;
+	}
+}

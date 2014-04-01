@@ -1,5 +1,6 @@
 body {
 	font-family: $font-primary;
+	font-weight: 300;
 }
 
 h1 {
@@ -36,6 +37,12 @@ p {
 	font-family: $font-primary;
 	color: $color-grey-dark;	
 }
+
+strong {
+	font-weight:bold;
+	border-bottom:1px dashed $color-grey-dark;
+}
+
 p,
 li,
 dt,
