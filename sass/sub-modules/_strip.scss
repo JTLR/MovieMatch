@@ -1,0 +1,11 @@
+.strip {
+	@include clear-fix;
+	padding: rem(40) 0;
+
+	&.grey {
+		background-color: $color-grey;
+	}
+	&.brand {
+		background-color: $color-brand;		
+	}
+}
