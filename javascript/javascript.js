@@ -169,8 +169,9 @@ $(window).load(function () {
  
 	 $(".like-movie").each(function () {
 	 	$(this).hover(function () {
+	 		 $('.icon-hover').text("I like this movie");
       $('.movie-information', $(this).siblings(".movie-container")).addClass("active green");  //Add the active class to the area is hovered
-      $('.icon-hover').text("I like this movie");
+     
   }, function () {
       $('.movie-information', $(this).siblings(".movie-container")).removeClass("active green");
   });
@@ -178,8 +179,9 @@ $(window).load(function () {
 	 });
 	 $(".watch-list").each(function () {
 	 	$(this).hover(function () {
-      $('.movie-information', $(this).siblings(".movie-container")).addClass("active brand"); 
+
       $('.icon-hover').text("Add to watch list");  //Add the active class to the area is hovered
+      $('.movie-information', $(this).siblings(".movie-container")).addClass("active brand"); 
   }, function () {
       $('.movie-information', $(this).siblings(".movie-container")).removeClass("active brand");
   });
@@ -187,8 +189,9 @@ $(window).load(function () {
 	 });
 	 $(".dislike-movie").each(function () {
 	 	$(this).hover(function () {
-      $('.movie-information', $(this).siblings(".movie-container")).addClass("active red");  //Add the active class to the area is hovered
+	 		 //Add the active class to the area is hovered
       $('.icon-hover').text("I don't like this movie");
+      $('.movie-information', $(this).siblings(".movie-container")).addClass("active red"); 
   }, function () {
       $('.movie-information', $(this).siblings(".movie-container")).removeClass("active red");
   });
