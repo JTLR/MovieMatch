@@ -67,12 +67,12 @@
 
 						<h1>Add your favourite movies</h1>
 
-						<button class="button grey">
+						<button class="button grey-light">
 							<i class="fa fa-cogs"></i>
 						</button>
 						<form class="inline left">
 							<input type="search" placeholder="Search">
-							<input class="button fa-x green" type="submit" value="&#xf002;">
+							<input class="button fa-x blue" type="submit" value="&#xf002;">
 						</form>
 					</div>
 				</div>
@@ -97,18 +97,16 @@
 							
 								<div class="movie-container">
 								<img class="movie-thumbnail" {{bind-attr src=movie.img alt=movie.title title=movie.title}}>
-								<div class="movie-information"><h4>I like this movie</h4></div>
-								<div class="movie-information-hidden-red"><h4>I dislike this movie</h4></div>
-								<div class="movie-information-hidden-brand"><h4>I want to watch this</h4></div>
+								<div class="movie-information"><h4 class="icon-hover"></h4></div>
 								<div class="movie-name">{{movie.title}}</div>
 								</div>
 								<button class="button base-third green like-movie">
 									<i class="fa fa-thumbs-o-up"></i>
 								</button>
-								<button class="button base-third red">
+								<button class="button base-third red dislike-movie">
 									<i class="fa fa-thumbs-o-down"></i>
 								</button>
-								<button class="button base-third blue">
+								<button class="button base-third blue watch-list">
 									<i class="fa fa-eye"></i>
 								</button>
 								

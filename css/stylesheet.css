@@ -3869,8 +3869,20 @@ a:hover, .anchor:hover {
 .button.grey:active {
   background-color: #999999;
 }
+/* line 67, ../sass/sub-modules/_buttons.scss */
+.button.grey-light {
+  background-color: #f1f1f1;
+}
+/* line 69, ../sass/sub-modules/_buttons.scss */
+.button.grey-light:hover {
+  background-color: #d7d7d7;
+}
+/* line 72, ../sass/sub-modules/_buttons.scss */
+.button.grey-light:active {
+  background-color: #bebebe;
+}
 
-/* line 68, ../sass/sub-modules/_buttons.scss */
+/* line 77, ../sass/sub-modules/_buttons.scss */
 input[type=submit].button {
   padding: 0.9375rem;
   webkit-appearance: none;
@@ -4018,7 +4030,7 @@ input[type=submit].fa-x {
 /* line 1, ../sass/sub-modules/_site-header.scss */
 .site-header {
   position: fixed;
-  z-index: 1;
+  z-index: 10;
   float: left;
   clear: both;
   width: 100%;
@@ -4165,78 +4177,43 @@ input[type=submit].fa-x {
 
 /* line 15, ../sass/modules/_movie.scss */
 .movie-information {
-  width: 100%;
-  opacity: 0;
-  position: absolute;
-  bottom: 0;
-  -webkit-transition: 0.25s opacity ease, 0.25s padding ease, 0.25s height ease;
-  -moz-transition: 0.25s opacity ease, 0.25s padding ease, 0.25s height ease;
-  -o-transition: 0.25s opacity ease, 0.25s padding ease, 0.25s height ease;
-  transition: 0.25s opacity ease, 0.25s padding ease, 0.25s height ease;
-}
-
-/* line 22, ../sass/modules/_movie.scss */
-.movie-information-hidden-red {
-  width: 100%;
-  opacity: 0;
-  position: absolute;
-}
-
-/* line 27, ../sass/modules/_movie.scss */
-.movie-information-hidden-brand {
-  width: 100%;
-  opacity: 0;
-  position: absolute;
-}
-
-/* line 32, ../sass/modules/_movie.scss */
-.movie-information-active {
   position: absolute;
   left: 0;
   width: 100%;
-  background-color: rgba(45, 186, 78, 0.8);
   color: #FFFFFF;
   height: 100%;
   z-index: 1;
   padding-top: 72%;
   text-align: center;
+  opacity: 0;
+  -webkit-transition: 0.25s opacity ease, 0.25s padding ease, 0.25s height ease, 0.25s background-color ease;
+  -moz-transition: 0.25s opacity ease, 0.25s padding ease, 0.25s height ease, 0.25s background-color ease;
+  -o-transition: 0.25s opacity ease, 0.25s padding ease, 0.25s height ease, 0.25s background-color ease;
+  transition: 0.25s opacity ease, 0.25s padding ease, 0.25s height ease, 0.25s background-color ease;
+}
+/* line 27, ../sass/modules/_movie.scss */
+.movie-information.active {
   opacity: 1;
 }
-
-/* line 45, ../sass/modules/_movie.scss */
-.movie-information-red {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  background-color: rgba(224, 107, 105, 0.8);
-  color: #FFFFFF;
-  bottom: 0;
-  height: 100%;
-  padding-top: 72%;
-  text-align: center;
-  opacity: 1;
-}
-
-/* line 57, ../sass/modules/_movie.scss */
-.movie-information-brand {
-  position: absolute;
-  left: 0;
-  width: 100%;
+/* line 29, ../sass/modules/_movie.scss */
+.movie-information.active.brand {
   background-color: rgba(37, 77, 125, 0.8);
-  color: #FFFFFF;
-  bottom: 0;
-  height: 100%;
-  padding-top: 72%;
-  text-align: center;
-  opacity: 1;
+}
+/* line 32, ../sass/modules/_movie.scss */
+.movie-information.active.green {
+  background-color: rgba(45, 186, 78, 0.8);
+}
+/* line 35, ../sass/modules/_movie.scss */
+.movie-information.active.red {
+  background-color: rgba(224, 107, 105, 0.8);
 }
 
-/* line 69, ../sass/modules/_movie.scss */
+/* line 42, ../sass/modules/_movie.scss */
 .movie-information h4 {
   color: #FFFFFF !important;
 }
 
-/* line 73, ../sass/modules/_movie.scss */
+/* line 46, ../sass/modules/_movie.scss */
 .movie-container {
   position: relative;
   padding-bottom: 150%;
@@ -4246,7 +4223,7 @@ input[type=submit].fa-x {
   width: 100%;
 }
 
-/* line 80, ../sass/modules/_movie.scss */
+/* line 53, ../sass/modules/_movie.scss */
 .movie-name {
   position: absolute;
   left: 0;
@@ -4257,13 +4234,13 @@ input[type=submit].fa-x {
   bottom: 0;
 }
 
-/* line 91, ../sass/modules/_movie.scss */
+/* line 64, ../sass/modules/_movie.scss */
 .search {
   margin-top: 2.5rem;
 }
 
 @media all and (min-width: 48em) {
-  /* line 108, ../sass/modules/_movie.scss */
+  /* line 81, ../sass/modules/_movie.scss */
   .movie-thumbnail {
     width: 100%;
     margin: 0 0 0 0;

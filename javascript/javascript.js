@@ -169,12 +169,31 @@ $(window).load(function () {
  
 	 $(".like-movie").each(function () {
 	 	$(this).hover(function () {
-	 	console.log('yes');
-      $('.movie-information', $(this).siblings(".movie-container")).addClass("movie-information-active");  //Add the active class to the area is hovered
+      $('.movie-information', $(this).siblings(".movie-container")).addClass("active green");  //Add the active class to the area is hovered
+      $('.icon-hover').text("I like this movie");
   }, function () {
-  	console.log('no');
-      $('.movie-information', $(this).siblings(".movie-container")).removeClass("movie-information-active");
-  });});
+      $('.movie-information', $(this).siblings(".movie-container")).removeClass("active green");
+  });
+
+	 });
+	 $(".watch-list").each(function () {
+	 	$(this).hover(function () {
+      $('.movie-information', $(this).siblings(".movie-container")).addClass("active brand"); 
+      $('.icon-hover').text("Add to watch list");  //Add the active class to the area is hovered
+  }, function () {
+      $('.movie-information', $(this).siblings(".movie-container")).removeClass("active brand");
+  });
+
+	 });
+	 $(".dislike-movie").each(function () {
+	 	$(this).hover(function () {
+      $('.movie-information', $(this).siblings(".movie-container")).addClass("active red");  //Add the active class to the area is hovered
+      $('.icon-hover').text("I don't like this movie");
+  }, function () {
+      $('.movie-information', $(this).siblings(".movie-container")).removeClass("active red");
+  });
+
+	 });
  }); 
 
 

@@ -1,6 +1,6 @@
 .site-header {
 	position:fixed;
-	z-index:1;
+	z-index:10;
 	@include clear-fix;
 	margin: 0 0 rem(40) 0;
 	background-color: $color-brand;
