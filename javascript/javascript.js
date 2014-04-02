@@ -149,16 +149,25 @@ $(document).ready(function () {
             foo = $('#js-typist-1'),
             bar = $('#js-typist-2');
  
-            foo.typer(['Die Hard', 'Inception', 'Titanic', 'Knocked up', 'Project X', 'Coach Carter', 'Toy Story', 'Blindness', 'About a Boy', 'Casino'], {
-            	delay: 5000,
-            	duration: 1000
-            });
-            setTimeout(function() { 
-            	bar.typer(['Air Force One', 'Source Code', 'Dear John', 'Role Models', 'The Hangover', 'Goal', 'Madagascar', 'Pontypool', 'Juno', 'Scarface'], {
-            		delay: 5000,
-            		duration: 1000
-            	});
-            }, 1250);
+            
+
+            setTimeout(function() {
+            	$('.js-intro').removeClass('is-active');
+            	$('.js-type').fadeIn(1000).addClass('is-active');
+
+	            setTimeout(function() { 
+	            	foo.typer(['Die Hard', 'Inception', 'Titanic', 'Knocked up', 'Project X', 'Coach Carter', 'Toy Story', 'Blindness', 'About a Boy', 'Casino'], {
+		            	delay: 5000,
+		            	duration: 1000
+		            });
+		            setTimeout(function() { 
+		            	bar.typer(['Air Force One', 'Source Code', 'Dear John', 'Role Models', 'The Hangover', 'Goal', 'Madagascar', 'Pontypool', 'Juno', 'Scarface'], {
+		            		delay: 5000,
+		            		duration: 1000
+		            	});
+		            }, 1250);
+	        	}, 500);
+            }, 3500);
 
 
 });
@@ -216,7 +225,7 @@ var heroText;
 			scrollPosition = $(window).scrollTop();
 			backgroundPosition = (Math.floor(scrollPosition/parallaxAmount));
 			heroPosition = -(Math.floor(scrollPosition/parallaxAmount));
-			body.css('background-position', 'center ' + backgroundPosition + 'px');
+			body.css('background-position', 'center ' + (backgroundPosition + 68) + 'px');
 			heroText.css('top', (heroPosition * 2.4) + 'px');
 	});
 

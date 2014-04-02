@@ -4284,49 +4284,47 @@ body.landing-page .strip + .strip {
   height: 46.875rem;
 }
 
-/* line 35, ../sass/modules/_landing-page.scss */
+/* line 33, ../sass/modules/_landing-page.scss */
 .hero-text {
   text-align: center;
   display: table-cell;
   vertical-align: middle;
 }
-/* line 42, ../sass/modules/_landing-page.scss */
+/* line 37, ../sass/modules/_landing-page.scss */
 .hero-text p {
   display: none;
   color: #254d7d;
-  font-size: 3.25rem;
+  font-size: 1.75rem;
   padding: 1.875rem 1.25rem;
   line-height: 3.25rem;
+}
+/* line 43, ../sass/modules/_landing-page.scss */
+.hero-text p.is-active {
+  display: block;
+}
+
+/* line 49, ../sass/modules/_landing-page.scss */
+.hero-text-inner-container {
   background-color: white;
   -webkit-box-shadow: 0px 0px 30px 0px black;
   -moz-box-shadow: 0px 0px 30px 0px black;
   box-shadow: 0px 0px 30px 0px black;
 }
-/* line 50, ../sass/modules/_landing-page.scss */
-.hero-text p.is-active {
-  display: inline;
-}
 
-@media all and (min-width: 0) {
-  /* line 61, ../sass/modules/_landing-page.scss */
-  .hero-text p {
-    font-size: 1.75rem;
-  }
-}
 @media all and (min-width: 33.813em) {
-  /* line 70, ../sass/modules/_landing-page.scss */
+  /* line 56, ../sass/modules/_landing-page.scss */
   .hero-text p {
     font-size: 2.5rem;
   }
 }
 @media all and (min-width: 48em) {
-  /* line 78, ../sass/modules/_landing-page.scss */
+  /* line 64, ../sass/modules/_landing-page.scss */
   .hero-text p {
     font-size: 2.8125rem;
   }
 }
 @media all and (min-width: 64em) {
-  /* line 86, ../sass/modules/_landing-page.scss */
+  /* line 72, ../sass/modules/_landing-page.scss */
   .hero-text p {
     font-size: 2.8125rem;
   }
