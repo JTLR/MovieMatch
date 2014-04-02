@@ -4257,8 +4257,13 @@ input[type=submit].fa-x {
   bottom: 0;
 }
 
+/* line 91, ../sass/modules/_movie.scss */
+.search {
+  margin-top: 2.5rem;
+}
+
 @media all and (min-width: 48em) {
-  /* line 104, ../sass/modules/_movie.scss */
+  /* line 108, ../sass/modules/_movie.scss */
   .movie-thumbnail {
     width: 100%;
     margin: 0 0 0 0;
