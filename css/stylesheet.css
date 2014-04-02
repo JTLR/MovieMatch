@@ -4008,19 +4008,18 @@ input[type=submit].fa-x {
   float: left;
   clear: both;
   width: 100%;
-  margin: 2.5rem 0 0 0;
   padding: 0.625rem 0;
-  background-color: #254d7d;
+  background-color: #333333;
 }
-/* line 8, ../sass/sub-modules/_site-footer.scss */
+/* line 7, ../sass/sub-modules/_site-footer.scss */
 .site-footer h1 a {
   color: white;
 }
-/* line 10, ../sass/sub-modules/_site-footer.scss */
+/* line 9, ../sass/sub-modules/_site-footer.scss */
 .site-footer h1 a:hover {
   color: #cccccc;
 }
-/* line 15, ../sass/sub-modules/_site-footer.scss */
+/* line 14, ../sass/sub-modules/_site-footer.scss */
 .site-footer p {
   font-size: 14px;
   color: white;

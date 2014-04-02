@@ -1,9 +1,8 @@
 .site-footer {
 	bottom:0;
 	@include clear-fix;
-	margin: rem(40) 0 0 0;
 	padding: rem(10) 0;
-	background-color: $color-brand;
+	background-color: $color-grey-dark;
 	h1 { 
 		a {
 			color: $color-white;
