@@ -2347,14 +2347,22 @@ h1.white, h2.white, h3.white, h4.white, h5.white, h6.white, p.white, ul.white, o
 h1 {
   margin-bottom: 1.875rem;
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 3.125rem;
-  line-height: 3.4375rem;
+  font-size: 2.5rem;
+  line-height: 3.125rem;
   color: #333333;
-  margin-bottom: 1.875rem;
 }
 
-/* line 20, ../sass/base/_typography.scss */
+/* line 19, ../sass/base/_typography.scss */
 h2 {
+  margin-bottom: 1.5625rem;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.875rem;
+  line-height: 2.5rem;
+  color: #333333;
+}
+
+/* line 26, ../sass/base/_typography.scss */
+h3 {
   margin-bottom: 1.25rem;
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.5625rem;
@@ -2362,16 +2370,7 @@ h2 {
   color: #333333;
 }
 
-/* line 27, ../sass/base/_typography.scss */
-h3 {
-  margin-bottom: 1.25rem;
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.4375rem;
-  line-height: 1.75rem;
-  color: #333333;
-}
-
-/* line 34, ../sass/base/_typography.scss */
+/* line 33, ../sass/base/_typography.scss */
 h4 {
   margin-bottom: 1.25rem;
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -2380,7 +2379,7 @@ h4 {
   color: #333333;
 }
 
-/* line 41, ../sass/base/_typography.scss */
+/* line 40, ../sass/base/_typography.scss */
 h5 {
   margin-bottom: 1.25rem;
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -2389,7 +2388,7 @@ h5 {
   color: #333333;
 }
 
-/* line 48, ../sass/base/_typography.scss */
+/* line 47, ../sass/base/_typography.scss */
 h6 {
   margin-bottom: 1.25rem;
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -2398,22 +2397,22 @@ h6 {
   color: #333333;
 }
 
-/* line 55, ../sass/base/_typography.scss */
+/* line 54, ../sass/base/_typography.scss */
 p {
   margin-bottom: 1.25rem;
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333333;
   font-size: 1rem;
-  line-height: 1.875rem;
+  line-height: 1.3125rem;
 }
 
-/* line 63, ../sass/base/_typography.scss */
+/* line 62, ../sass/base/_typography.scss */
 strong {
   font-weight: 400;
   border-bottom: 1px dashed #333333;
 }
 
-/* line 72, ../sass/base/_typography.scss */
+/* line 71, ../sass/base/_typography.scss */
 p,
 li,
 dt,
@@ -2422,7 +2421,7 @@ dd,
   font-size: 1rem;
 }
 
-/* line 75, ../sass/base/_typography.scss */
+/* line 74, ../sass/base/_typography.scss */
 a, .anchor {
   color: #254d7d;
   -webkit-transition: 0.25s color ease;
@@ -2430,106 +2429,113 @@ a, .anchor {
   -o-transition: 0.25s color ease;
   transition: 0.25s color ease;
 }
-/* line 78, ../sass/base/_typography.scss */
+/* line 77, ../sass/base/_typography.scss */
 a:hover, .anchor:hover {
   color: #193556;
 }
 
-/* line 82, ../sass/base/_typography.scss */
+/* line 81, ../sass/base/_typography.scss */
 .anchor {
   cursor: pointer;
 }
 
-/* line 86, ../sass/base/_typography.scss */
+/* line 85, ../sass/base/_typography.scss */
 .sub-title {
   font-family: Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 @media all and (min-width: 30.063em) {
-  /* line 91, ../sass/base/_typography.scss */
+  /* line 90, ../sass/base/_typography.scss */
   h1 {
-    font-size: 2.1875rem;
-    line-height: 2.8125rem;
+    margin-bottom: 1.875rem;
+    font-size: 2.8125rem;
+    line-height: 3.4375rem;
   }
 
   /* line 95, ../sass/base/_typography.scss */
   h2 {
+    margin-bottom: 1.5625rem;
+    font-size: 2.1875rem;
+    line-height: 2.8125rem;
+  }
+
+  /* line 100, ../sass/base/_typography.scss */
+  h3 {
+    margin-bottom: 1.25rem;
     font-size: 1.875rem;
     line-height: 2.1875rem;
   }
 
-  /* line 99, ../sass/base/_typography.scss */
-  h3 {
-    font-size: 1.6875rem;
-    line-height: 2rem;
-  }
-
-  /* line 103, ../sass/base/_typography.scss */
+  /* line 105, ../sass/base/_typography.scss */
   h4 {
-    font-size: 1.4375rem;
-    line-height: 1.75rem;
+    margin-bottom: 1.25rem;
+    font-size: 1.5625rem;
+    line-height: 1.875rem;
   }
 
-  /* line 107, ../sass/base/_typography.scss */
+  /* line 110, ../sass/base/_typography.scss */
   h5 {
+    margin-bottom: 1.25rem;
     font-size: 1.25rem;
     line-height: 1.5625rem;
   }
 
-  /* line 111, ../sass/base/_typography.scss */
+  /* line 115, ../sass/base/_typography.scss */
   h6 {
+    margin-bottom: 1.25rem;
     font-size: 1.125rem;
     line-height: 1.4375rem;
   }
 
-  /* line 119, ../sass/base/_typography.scss */
+  /* line 124, ../sass/base/_typography.scss */
   p,
   li,
   dt,
   dd,
   .button {
+    margin-bottom: 1.25rem;
     font-size: 1.125rem;
     line-height: 1.4375rem;
   }
 }
 @media all and (min-width: 48em) {
-  /* line 129, ../sass/base/_typography.scss */
+  /* line 135, ../sass/base/_typography.scss */
   h1 {
     font-size: 3.125rem;
     line-height: 3.75rem;
   }
 
-  /* line 133, ../sass/base/_typography.scss */
+  /* line 139, ../sass/base/_typography.scss */
   h2 {
+    font-size: 2.5rem;
+    line-height: 3.125rem;
+  }
+
+  /* line 143, ../sass/base/_typography.scss */
+  h3 {
     font-size: 2.1875rem;
     line-height: 2.5rem;
   }
 
-  /* line 137, ../sass/base/_typography.scss */
-  h3 {
-    font-size: 2rem;
-    line-height: 2.3125rem;
-  }
-
-  /* line 141, ../sass/base/_typography.scss */
+  /* line 147, ../sass/base/_typography.scss */
   h4 {
-    font-size: 1.75rem;
-    line-height: 2.0625rem;
+    font-size: 1.875rem;
+    line-height: 2.1875rem;
   }
 
-  /* line 145, ../sass/base/_typography.scss */
+  /* line 151, ../sass/base/_typography.scss */
   h5 {
     font-size: 1.5625rem;
     line-height: 1.875rem;
   }
 
-  /* line 149, ../sass/base/_typography.scss */
+  /* line 155, ../sass/base/_typography.scss */
   h6 {
     font-size: 1.4375rem;
     line-height: 1.75rem;
   }
 
-  /* line 157, ../sass/base/_typography.scss */
+  /* line 163, ../sass/base/_typography.scss */
   li,
   dt,
   dd,
@@ -2538,7 +2544,7 @@ a:hover, .anchor:hover {
     line-height: 1.75rem;
   }
 
-  /* line 161, ../sass/base/_typography.scss */
+  /* line 167, ../sass/base/_typography.scss */
   p {
     font-size: 1.4375rem;
     line-height: 2.1875rem;
@@ -4097,24 +4103,6 @@ input[type=submit].fa-x {
     float: left;
   }
 }
-/* line 1, ../sass/sub-modules/_style-guide.scss */
-.fat-button {
-  padding: 5px;
-  color: white;
-  -webkit-transition: 0.5s all ease;
-  -moz-transition: 0.5s all ease;
-  -o-transition: 0.5s all ease;
-  transition: 0.5s all ease;
-  background-color: #254d7d;
-  float: left;
-}
-
-/* line 8, ../sass/sub-modules/_style-guide.scss */
-.fat-button:hover {
-  color: white;
-  background-color: #193556;
-}
-
 /* line 1, ../sass/sub-modules/_site-main.scss */
 .site-main {
   padding-top: 3.9375rem;

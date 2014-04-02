@@ -10,54 +10,53 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li {
 }
 
 h1 {
-	margin-bottom:rem(30);	
+	margin-bottom: rem(30);	
 	font-family: $font-primary;
-	font-size: rem(50);
-	line-height: rem(55);
+	font-size: rem(40);
+	line-height: rem(50);
 	color: $color-grey-dark;
-	margin-bottom:rem(30);	
 }
 h2 {
-	margin-bottom:rem(20);	
+	margin-bottom: rem(25);	
+	font-family: $font-primary;
+	font-size: rem(30);
+	line-height: rem(40);
+	color: $color-grey-dark;
+}
+h3 {
+	margin-bottom: rem(20);	
 	font-family: $font-primary;
 	font-size: rem(25);
 	line-height: rem(30);
 	color: $color-grey-dark;
 }
-h3 {
-	margin-bottom:rem(20);	
-	font-family: $font-primary;
-	font-size: rem(23);
-	line-height: rem(28);
-	color: $color-grey-dark;
-}
 h4 {
-	margin-bottom:rem(20);	
+	margin-bottom: rem(20);	
 	font-family: $font-primary;
 	font-size: rem(20);
 	line-height: rem(25);
 	color: $color-grey-dark;
 }
 h5 {
-	margin-bottom:rem(20);	
+	margin-bottom: rem(20);	
 	font-family: $font-primary;
 	font-size: rem(18);
 	line-height: rem(23);
 	color: $color-grey-dark;
 }
 h6 {
-	margin-bottom:rem(20);	
+	margin-bottom: rem(20);	
 	font-family: $font-primary;
 	font-size: rem(16);
 	line-height: rem(21);
 	color: $color-grey-dark;
 }
 p {
-	margin-bottom:rem(20);	
+	margin-bottom: rem(20);	
 	font-family: $font-primary;
 	color: $color-grey-dark;
 	font-size: rem(16);
-	line-height: rem(30);
+	line-height: rem(21);
 }
 
 strong {
@@ -89,26 +88,32 @@ a, .anchor {
 
 @media all and (min-width: $small) {
 	h1 {
+		margin-bottom: rem(30);
+		font-size: rem(45);
+		line-height: rem(55);
+	}
+	h2 {
+		margin-bottom: rem(25);
 		font-size: rem(35);
 		line-height: rem(45);
 	}
-	h2 {
+	h3 {
+		margin-bottom: rem(20);
 		font-size: rem(30);
 		line-height: rem(35);
 	}
-	h3 {
-		font-size: rem(27);
-		line-height: rem(32);
-	}
 	h4 {
-		font-size: rem(23);
-		line-height: rem(28);
+		margin-bottom: rem(20);
+		font-size: rem(25);
+		line-height: rem(30);
 	}
 	h5 {
+		margin-bottom: rem(20);
 		font-size: rem(20);
 		line-height: rem(25);
 	}
 	h6 {
+		margin-bottom: rem(20);
 		font-size: rem(18);
 		line-height: rem(23);
 	}
@@ -117,6 +122,7 @@ a, .anchor {
 	dt,
 	dd,
 	.button {
+		margin-bottom: rem(20);
 		font-size: rem(18);
 		line-height: rem(23);
 	}
@@ -131,16 +137,16 @@ a, .anchor {
 		line-height: rem(60);
 	}
 	h2 {
+		font-size: rem(40);
+		line-height: rem(50);
+	}
+	h3 {
 		font-size: rem(35);
 		line-height: rem(40);
 	}
-	h3 {
-		font-size: rem(32);
-		line-height: rem(37);
-	}
 	h4 {
-		font-size: rem(28);
-		line-height: rem(33);
+		font-size: rem(30);
+		line-height: rem(35);
 	}
 	h5 {
 		font-size: rem(25);
