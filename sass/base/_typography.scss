@@ -120,9 +120,13 @@ a, .anchor {
 	p,
 	li,
 	dt,
-	dd,
+	dd {
+		
+		font-size: rem(18);
+		line-height: rem(23);
+	}
 	.button {
-		margin-bottom: rem(20);
+		margin-bottom: rem(0);
 		font-size: rem(18);
 		line-height: rem(23);
 	}

@@ -2487,55 +2487,60 @@ a:hover, .anchor:hover {
     line-height: 1.4375rem;
   }
 
-  /* line 124, ../sass/base/_typography.scss */
+  /* line 123, ../sass/base/_typography.scss */
   p,
   li,
   dt,
-  dd,
+  dd {
+    font-size: 1.125rem;
+    line-height: 1.4375rem;
+  }
+
+  /* line 128, ../sass/base/_typography.scss */
   .button {
-    margin-bottom: 1.25rem;
+    margin-bottom: 0rem;
     font-size: 1.125rem;
     line-height: 1.4375rem;
   }
 }
 @media all and (min-width: 48em) {
-  /* line 135, ../sass/base/_typography.scss */
+  /* line 139, ../sass/base/_typography.scss */
   h1 {
     font-size: 3.125rem;
     line-height: 3.75rem;
   }
 
-  /* line 139, ../sass/base/_typography.scss */
+  /* line 143, ../sass/base/_typography.scss */
   h2 {
     font-size: 2.5rem;
     line-height: 3.125rem;
   }
 
-  /* line 143, ../sass/base/_typography.scss */
+  /* line 147, ../sass/base/_typography.scss */
   h3 {
     font-size: 2.1875rem;
     line-height: 2.5rem;
   }
 
-  /* line 147, ../sass/base/_typography.scss */
+  /* line 151, ../sass/base/_typography.scss */
   h4 {
     font-size: 1.875rem;
     line-height: 2.1875rem;
   }
 
-  /* line 151, ../sass/base/_typography.scss */
+  /* line 155, ../sass/base/_typography.scss */
   h5 {
     font-size: 1.5625rem;
     line-height: 1.875rem;
   }
 
-  /* line 155, ../sass/base/_typography.scss */
+  /* line 159, ../sass/base/_typography.scss */
   h6 {
     font-size: 1.4375rem;
     line-height: 1.75rem;
   }
 
-  /* line 163, ../sass/base/_typography.scss */
+  /* line 167, ../sass/base/_typography.scss */
   li,
   dt,
   dd,
@@ -2544,7 +2549,7 @@ a:hover, .anchor:hover {
     line-height: 1.75rem;
   }
 
-  /* line 167, ../sass/base/_typography.scss */
+  /* line 171, ../sass/base/_typography.scss */
   p {
     font-size: 1.4375rem;
     line-height: 2.1875rem;
