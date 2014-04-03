@@ -3978,26 +3978,42 @@ form.inline input,
 form.inline label {
   float: left;
 }
+/* line 12, ../sass/sub-modules/_form.scss */
+form.movie-search {
+  margin-bottom: 3.125rem;
+}
+/* line 14, ../sass/sub-modules/_form.scss */
+form.movie-search input {
+  height: auto;
+  font-size: 1.5625rem;
+}
 
-/* line 15, ../sass/sub-modules/_form.scss */
+/* line 21, ../sass/sub-modules/_form.scss */
+input[type=search] {
+  padding: 0.625rem;
+  background: #f1f1f1;
+  width: 100%;
+}
+
+/* line 28, ../sass/sub-modules/_form.scss */
 input[type=submit].fa-x {
   font-family: FontAwesome;
 }
 
 @media all and (min-width: 30.063em) {
-  /* line 21, ../sass/sub-modules/_form.scss */
+  /* line 34, ../sass/sub-modules/_form.scss */
   input {
     font-size: 1.25rem;
   }
 }
 @media all and (min-width: 33.813em) {
-  /* line 27, ../sass/sub-modules/_form.scss */
+  /* line 40, ../sass/sub-modules/_form.scss */
   input {
     font-size: 1.5625rem;
   }
 }
 @media all and (min-width: 48em) {
-  /* line 33, ../sass/sub-modules/_form.scss */
+  /* line 46, ../sass/sub-modules/_form.scss */
   input {
     font-size: 1.875rem;
   }
@@ -4121,7 +4137,7 @@ input[type=submit].fa-x {
 }
 /* line 1, ../sass/sub-modules/_site-main.scss */
 .site-main {
-  padding-top: 3.9375rem;
+  padding-top: 6.25rem;
 }
 
 /* line 1, ../sass/sub-modules/_strip.scss */

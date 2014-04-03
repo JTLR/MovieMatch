@@ -9,6 +9,19 @@ form {
 			float: left;
 		}
 	}
+	&.movie-search {
+		margin-bottom:rem(50);
+			input {
+				height:auto;
+				font-size: rem(25);
+			}
+	}
+}
+
+input[type=search] { 
+	padding: rem(10);     
+	background: $color-grey-light;  
+	width:100%; 
 }
 
 input[type=submit] {
