@@ -1,13 +1,19 @@
 .site-navigation {
 	ul {
+		position: fixed;
+		top: rem(64);
+		left: 0;
+		width: 100%;
 		display: none;
-		padding:0;
+		padding: 0;
+		background-color: $color-grey-dark;
 		li {
-			padding-bottom:0;
-			margin-right:0;
+			width: 100%;
+			padding-bottom: 0;
+			margin-right: 0;
 			a {
 				color: $color-white;
-				padding: rem(20);
+				padding: rem(16) rem(20);
 				display: block;
 				@include transition(.25s background-color ease);
 				&:hover {
@@ -19,6 +25,9 @@
 					color: $color-grey-dark;
 				}
 			}
+			.button {
+				width: 100%;
+			}
 
 		}
 	}
@@ -29,10 +38,14 @@
 }
 .site-navigation-toggle {
 	float: right;
-	padding: 0 rem(15);
+	padding: rem(14);
 	font-size: rem(20);
 	color: $color-white;
 	@include transition(.25s color ease);
+	span {
+		display: block;
+		line-height: rem(10);
+	}
 	&:hover {
 		color: $color-grey;
 	}
@@ -62,7 +75,17 @@
 	.site-navigation {
 		float: right;
 		ul {
-			display: block;
+			display: block !important;
+			position: static;
+			top: auto;
+			left: auto;
+			background-color: transparent;
+			li {
+				width: auto;
+				.button {
+					width: auto;
+				}
+			}
 		}
 		input[type=search] {
 		}

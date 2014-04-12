@@ -1,45 +1,41 @@
 body.landing-page {
-
-	background:url('../images/new-bg.jpg') no-repeat center rem(68);
+	background: url('../images/new-bg.jpg') no-repeat center rem(60);
 	.strip {
-		margin-top:rem(450);
+		margin-top: rem(450);
 		+ .strip {
-			margin-top:0;
+			margin-top: 0;
 		}
 	}
 }
 
 .hero-container {
-	position:fixed;
-	top:0;
-	left:0;
-	width:100%;
-	z-index:-1;
-	
-
-	@include background-size(cover);
 	@include clear-fix;
-
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
 	height: rem(500);
+	@include background-size(cover);
 }
 
 .hero-text-container {
-	width:100%;
-	display:table;
-	top:0;
-	height: rem(750);
+	display: table;
+	top: 0;
+	width: 100%;
+	height: rem(575);
 }
 
 .hero-text {
-	text-align:center;
-	display:table-cell;
-	vertical-align:middle;	
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;	
 	p {
-		display:none;
-		color: $color-brand;
-		font-size: rem(28);
+		display: none;
 		padding: rem(30) rem(20);
+		font-size: rem(28);
 		line-height: rem(52);
+		color: $color-brand;
 		&.is-active {
 			display: block;
 		}
@@ -47,7 +43,7 @@ body.landing-page {
 }
 
 .hero-text-inner-container {
-	background-color:$color-white;
+	background-color: $color-white;
 	@include box-shadow(0px 0px 30px 0px rgba(0, 0, 0, 1));	
 }
 
@@ -60,6 +56,9 @@ body.landing-page {
 }
 
 @media all and (min-width: $large) {
+	.hero-text-container {
+		height: rem(700);
+	}
 	.hero-text {
 		p {
 			font-size: rem(45);			
@@ -68,9 +67,5 @@ body.landing-page {
 }
 
 @media all and (min-width: $xlarge) {
-	.hero-text {
-		p {
-			font-size: rem(45);			
-		}
-	}
+
 }

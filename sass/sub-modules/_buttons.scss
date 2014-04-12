@@ -73,6 +73,15 @@
 			background-color: darken($color-grey-light, 20%);
 		}
 	}
+	&.grey-dark {
+		background-color: $color-grey-dark;
+		&:hover {
+			background-color: darken($color-grey-dark, 10%);
+		}
+		&:active {
+			background-color: darken($color-grey-dark, 20%);
+		}
+	}
 }
 input[type=submit].button {
 	padding: rem(15);

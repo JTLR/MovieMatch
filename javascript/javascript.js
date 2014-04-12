@@ -143,90 +143,80 @@ Moviematch.GenreController = Ember.ObjectController.extend();
 Moviematch.PersonController = Ember.ObjectController.extend();
 
 // Presentational JS
-$(document).ready(function () {
-
-			var win = $(window),
-            foo = $('#js-typist-1'),
-            bar = $('#js-typist-2');
- 
-            
-
-            setTimeout(function() {
-            	$('.js-intro').removeClass('is-active');
-            	$('.js-type').fadeIn(1000).addClass('is-active');
-
-	            setTimeout(function() { 
-	            	foo.typer(['Die Hard', 'Inception', 'Titanic', 'Knocked up', 'Project X', 'Coach Carter', 'Toy Story', 'Blindness', 'About a Boy', 'Casino'], {
-		            	delay: 5000,
-		            	duration: 1000
-		            });
-		            setTimeout(function() { 
-		            	bar.typer(['Air Force One', 'Source Code', 'Dear John', 'Role Models', 'The Hangover', 'Goal', 'Madagascar', 'Pontypool', 'Juno', 'Scarface'], {
-		            		delay: 5000,
-		            		duration: 1000
-		            	});
-		            }, 1250);
-	        	}, 500);
-            }, 3500);
-
-
-});
-
-
-$(window).load(function () {
-	
- 
-	 $(".like-movie").each(function () {
-	 	$(this).hover(function () {
-	 		 $('.icon-hover').text("I like this movie");
-      $('.movie-information', $(this).siblings(".movie-container")).addClass("active green");  //Add the active class to the area is hovered
-     
-  }, function () {
-      $('.movie-information', $(this).siblings(".movie-container")).removeClass("active green");
-  });
-
-	 });
-	 $(".watch-list").each(function () {
-	 	$(this).hover(function () {
-
-      $('.icon-hover').text("Add to watch list");  //Add the active class to the area is hovered
-      $('.movie-information', $(this).siblings(".movie-container")).addClass("active brand"); 
-  }, function () {
-      $('.movie-information', $(this).siblings(".movie-container")).removeClass("active brand");
-  });
-
-	 });
-	 $(".dislike-movie").each(function () {
-	 	$(this).hover(function () {
-	 		 //Add the active class to the area is hovered
-      $('.icon-hover').text("I don't like this movie");
-      $('.movie-information', $(this).siblings(".movie-container")).addClass("active red"); 
-  }, function () {
-      $('.movie-information', $(this).siblings(".movie-container")).removeClass("active red");
-  });
-
-	 });
- }); 
-
 
 var body;
 var backgroundPosition;
 var scrollPosition;
 var parallaxAmount = 1.5;
 var heroText;
- 
-	$(window).load(function () {
-		heroText = $('.hero-container');
-		body = $('body');
-		});
-		 
-			$(window).scroll(function () {
 
-			scrollPosition = $(window).scrollTop();
-			backgroundPosition = (Math.floor(scrollPosition/parallaxAmount));
-			heroPosition = -(Math.floor(scrollPosition/parallaxAmount));
-			body.css('background-position', 'center ' + (backgroundPosition + 68) + 'px');
-			heroText.css('top', (heroPosition * 2.4) + 'px');
+$(document).ready(function () {
+    var typist1 = $('#js-typist-1'),
+    typist2 = $('#js-typist-2');      
+
+    $('.js-site-navigation-toggle').bind('click', function() {
+    	console.log('click');
+    	$('.js-site-navigation').slideToggle();
+    });
+
+    setTimeout(function() {
+    	$('.js-intro').removeClass('is-active');
+    	$('.js-type').fadeIn(1000).addClass('is-active');
+
+        setTimeout(function() { 
+        	typist1.typer(['Die Hard', 'Inception', 'Titanic', 'Knocked up', 'Project X', 'Coach Carter', 'Toy Story', 'Blindness', 'About a Boy', 'Casino'], {
+            	delay: 5000,
+            	duration: 1000
+            });
+            setTimeout(function() { 
+            	typist2.typer(['Air Force One', 'Source Code', 'Dear John', 'Role Models', 'The Hangover', 'Goal', 'Madagascar', 'Pontypool', 'Juno', 'Scarface'], {
+            		delay: 5000,
+            		duration: 1000
+            	});
+            }, 1250);
+    	}, 500);
+    }, 3500);
+});
+
+$(window).bind('load', function () {
+	heroText = $('.hero-container');
+	body = $('body');
+
+	$(".like-movie").each(function () {
+ 		$(this).hover(function () {
+ 		 	$('.icon-hover').text("I like this movie");
+  			$('.movie-information', $(this).siblings(".movie-container")).addClass("active green");  //Add the active class to the area is hovered     
+  		}, function () {
+	      	$('.movie-information', $(this).siblings(".movie-container")).removeClass("active green");
+		});
+	 });
+
+ 	$(".watch-list").each(function () {
+ 		$(this).hover(function () {
+			$('.icon-hover').text("Add to watch list");  //Add the active class to the area is hovered
+			$('.movie-information', $(this).siblings(".movie-container")).addClass("active brand"); 
+		}, function () {
+			$('.movie-information', $(this).siblings(".movie-container")).removeClass("active brand");
+		});
+	 });
+
+	$(".dislike-movie").each(function () {
+		$(this).hover(function () {
+			//Add the active class to the area is hovered
+			$('.icon-hover').text("I don't like this movie");
+			$('.movie-information', $(this).siblings(".movie-container")).addClass("active red"); 
+		}, function () {
+			$('.movie-information', $(this).siblings(".movie-container")).removeClass("active red");
+		});
 	});
+}); 
+		 
+$(window).bind('scroll', function () {
+	scrollPosition = $(window).scrollTop();
+	backgroundPosition = (Math.floor(scrollPosition/parallaxAmount));
+	heroPosition = -(Math.floor(scrollPosition/parallaxAmount));
+	body.css('background-position', 'center ' + (backgroundPosition + 60) + 'px');
+	heroText.css('top', (heroPosition * 2.4) + 'px');
+});
 
 

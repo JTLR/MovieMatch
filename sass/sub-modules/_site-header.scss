@@ -1,10 +1,9 @@
 .site-header {
-	position:fixed;
-	z-index:10;
 	@include clear-fix;
-	margin: 0 0 rem(40) 0;
+	position:fixed;
+	z-index: 10;
 	background-color: $color-brand;
-	@include box-shadow(0px 1px 10px 0px rgba(0, 0, 0, 0.53));
+	@include box-shadow(0 rem(1) rem(10) 0 rgba(0, 0, 0, 0.50));
 	h1 { 
 		line-height: rem(60);
 		font-size: rem(30);

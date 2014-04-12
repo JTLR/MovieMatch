@@ -61,7 +61,14 @@ p {
 
 strong {
 	font-weight:400;
-	border-bottom:1px dashed $color-grey-dark;
+}
+
+.underline-dashed {	
+	border-bottom: rem(1) dashed $color-grey-dark;
+}
+
+.tiny {
+	font-size: rem(10);
 }
 
 p,
