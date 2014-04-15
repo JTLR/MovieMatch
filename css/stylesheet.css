@@ -3902,8 +3902,23 @@ a:hover, .anchor:hover {
 .button.grey-dark:active {
   background-color: black;
 }
+/* line 85, ../sass/sub-modules/_buttons.scss */
+.button.white {
+  background-color: white;
+  color: #254d7d;
+}
+/* line 88, ../sass/sub-modules/_buttons.scss */
+.button.white:hover {
+  background-color: #f1f1f1;
+  color: #254d7d;
+}
+/* line 92, ../sass/sub-modules/_buttons.scss */
+.button.white:active {
+  background-color: #f1f1f1;
+  color: #254d7d;
+}
 
-/* line 86, ../sass/sub-modules/_buttons.scss */
+/* line 99, ../sass/sub-modules/_buttons.scss */
 input[type=submit].button {
   padding: 0.9375rem;
   webkit-appearance: none;
@@ -4098,7 +4113,7 @@ input[type=submit].fa-x {
   width: 100%;
   display: none;
   padding: 0;
-  background-color: #333333;
+  background-color: white;
 }
 /* line 10, ../sass/sub-modules/_site-navigation.scss */
 .site-navigation ul li {
@@ -4108,7 +4123,7 @@ input[type=submit].fa-x {
 }
 /* line 14, ../sass/sub-modules/_site-navigation.scss */
 .site-navigation ul li a {
-  color: white;
+  color: #254d7d;
   padding: 1rem 1.25rem;
   display: block;
   -webkit-transition: 0.25s background-color ease;
@@ -4118,7 +4133,7 @@ input[type=submit].fa-x {
 }
 /* line 19, ../sass/sub-modules/_site-navigation.scss */
 .site-navigation ul li a:hover {
-  background-color: #193556;
+  background-color: #f1f1f1;
 }
 /* line 24, ../sass/sub-modules/_site-navigation.scss */
 .site-navigation ul li.is-active a {
@@ -4168,16 +4183,24 @@ input[type=submit].fa-x {
     left: auto;
     background-color: transparent;
   }
-  /* line 83, ../sass/sub-modules/_site-navigation.scss */
+  /* line 84, ../sass/sub-modules/_site-navigation.scss */
   .site-navigation ul li {
     width: auto;
   }
-  /* line 85, ../sass/sub-modules/_site-navigation.scss */
+  /* line 86, ../sass/sub-modules/_site-navigation.scss */
   .site-navigation ul li .button {
     width: auto;
   }
+  /* line 90, ../sass/sub-modules/_site-navigation.scss */
+  .site-navigation ul li a {
+    color: white;
+  }
+  /* line 92, ../sass/sub-modules/_site-navigation.scss */
+  .site-navigation ul li a:hover {
+    background-color: #193556;
+  }
 
-  /* line 93, ../sass/sub-modules/_site-navigation.scss */
+  /* line 102, ../sass/sub-modules/_site-navigation.scss */
   .site-navigation-toggle {
     float: left;
   }
@@ -4217,6 +4240,55 @@ input[type=submit].fa-x {
 .fade img {
   display: block;
   height: auto;
+}
+
+/* line 2, ../sass/sub-modules/_award.scss */
+.award-container {
+  position: relative;
+  float: left;
+  padding-top: 1.875rem;
+}
+
+/* line 9, ../sass/sub-modules/_award.scss */
+.award-icon {
+  margin: 0 auto;
+  width: 3.125rem;
+  height: 3.125rem;
+}
+/* line 14, ../sass/sub-modules/_award.scss */
+.award-icon:hover + .award-tooltip {
+  opacity: 1;
+}
+
+/* line 20, ../sass/sub-modules/_award.scss */
+.award-tooltip {
+  opacity: 0;
+  padding: 0.3125rem;
+  font-size: 0.8125rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+}
+/* line 28, ../sass/sub-modules/_award.scss */
+.award-tooltip.bronze {
+  background-color: #eaded7;
+  color: #965a38;
+}
+/* line 32, ../sass/sub-modules/_award.scss */
+.award-tooltip.silver {
+  background-color: #ececec;
+  color: #a8a8a8;
+}
+/* line 36, ../sass/sub-modules/_award.scss */
+.award-tooltip.gold {
+  background-color: #f7edd9;
+  color: #d9a441;
+}
+/* line 40, ../sass/sub-modules/_award.scss */
+.award-tooltip.locked {
+  background-color: #f1f1f1;
+  color: #333333;
 }
 
 /* line 1, ../sass/modules/_movie.scss */

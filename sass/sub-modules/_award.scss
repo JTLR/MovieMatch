@@ -1,0 +1,44 @@
+
+.award-container {
+	position:relative;
+	float:left;
+	padding-top:rem(30);
+}
+
+
+.award-icon {
+	margin:0 auto;
+	width: rem(50);
+	height: rem(50);
+	&:hover {
+		+ .award-tooltip {
+			opacity:1;
+		}
+	}
+}
+
+.award-tooltip {
+	opacity:0;
+	padding: rem(5);
+	font-size: rem(13);
+	position: absolute;
+	top:0;
+	left:0;
+	white-space: nowrap;	
+	&.bronze {
+		background-color: $color-bronze-light;
+		color: $color-bronze;
+	}
+	&.silver {
+		background-color: $color-silver-light;
+		color: $color-silver;
+	}
+	&.gold {
+		background-color: $color-gold-light;
+		color: $color-gold;
+	}
+	&.locked {
+		background-color: $color-grey-light;
+		color: $color-grey-dark;
+	}
+}
