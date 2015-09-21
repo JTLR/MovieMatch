@@ -1,10 +1,12 @@
 // Application JS
 var Moviematch = Ember.Application.create();
+Moviematch.ApplicationAdapter = DS.FixtureAdapter;
 
 // Record array
 Moviematch.RecordArray = Ember.ArrayProxy.extend({
 
 });
+
 
 function createOrGetRecordArray(context) {
 	var array = context._recordArray;
@@ -22,7 +24,9 @@ function createOrGetRecordArray(context) {
 
 // Routers
 Moviematch.Router.map(function() {
-	this.resource('moviematch', { path: '/' });
+	this.route('moviematch', { path: '/' });
+	this.route('login', { path: '/login'});
+
 });
 
 Moviematch.MoviematchRoute = Ember.Route.extend({
@@ -31,6 +35,14 @@ Moviematch.MoviematchRoute = Ember.Route.extend({
 	}
 });
 
+Moviematch.loginRoute = Ember.Route.extend({
+	model: function() {
+		return Moviematch.User.findAll();
+	}, 
+	setupController: function(controller, model) {
+		controller.set("model", model);
+	}
+});
 // Models
 
 Moviematch.Model = Ember.Object.extend({
@@ -93,14 +105,11 @@ function ajax(url) {
 }
 
 // User
-Moviematch.User = DS.Model.extend({
-    firstName: DS.attr('string'),
-    lastName: DS.attr('string'),
-    email: DS.attr('string'),
-    password: DS.attr('string'),
-    watchList: DS.hasMany('movie', {async: true}),
-    likeList: DS.hasMany('movie', {async: true}),
-    dislikeList: DS.hasMany('movie', {async: true})
+Moviematch.User = Moviematch.Model.extend({
+    
+    username: DS.attr('string'),
+    password: DS.attr('string')
+    
 });
 
 // Movie
@@ -131,6 +140,8 @@ Moviematch.Person = DS.Model.extend({
 });
 
 
+
+
 // Controllers
 Moviematch.MoviematchController = Ember.ArrayController.extend();
 
@@ -141,6 +152,52 @@ Moviematch.YearController = Ember.ObjectController.extend();
 Moviematch.GenreController = Ember.ObjectController.extend();
 
 Moviematch.PersonController = Ember.ObjectController.extend();
+
+Moviematch.LoginController = Ember.ArrayController.extend({
+
+  loginFailed: false,
+  loginSuccessful: false,
+  isProcessing: false,
+  isSlowConnection: false,
+  timeout: null,
+
+  login: function(model) {
+    this.setProperties({
+      loginFailed: false,
+      isProcessing: true
+    });
+
+    this.set("timeout", setTimeout(this.slowConnection.bind(this), 1));
+    alert(model);
+    var request = $.post("/login", this.getProperties("username", "password"));
+    
+    request.then(this.success.bind(this), this.failure.bind(this));
+  },
+
+  success: function() {
+    this.reset();
+    this.set("loginSuccessful", true);
+    // sign in logic
+  },
+
+  failure: function() {
+    this.reset();
+    this.set("loginFailed", true);
+  },
+
+  slowConnection: function() {
+    this.set("isSlowConnection", true);
+  },
+
+  reset: function() {
+    clearTimeout(this.get("timeout"));
+    this.setProperties({
+      isProcessing: false,
+      isSlowConnection: false
+    });
+  }
+
+});
 
 // Presentational JS
 
@@ -155,7 +212,6 @@ $(document).ready(function () {
     typist2 = $('#js-typist-2');      
 
     $('.js-site-navigation-toggle').bind('click', function() {
-    	console.log('click');
     	$('.js-site-navigation').slideToggle();
     });
 
